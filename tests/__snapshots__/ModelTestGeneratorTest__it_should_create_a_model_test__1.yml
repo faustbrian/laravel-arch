@@ -1,0 +1,18 @@
+created:
+    tests/Unit/Models/UserTest.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace Tests\Unit\Models;
+
+        use App\Models\User;
+        use Illuminate\Database\Eloquent\Model;
+
+        it('should extend the eloquent model', function (): void {
+            $model = new User();
+
+            expect($model)->toBeInstanceOf(Model::class);
+        });
+deleted: {  }
+updated: {  }

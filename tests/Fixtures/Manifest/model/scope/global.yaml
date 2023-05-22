@@ -1,0 +1,9 @@
+version: 1.0.0
+definitions:
+  models:
+    User:
+      columns:
+        name: string
+        mail: string
+      globalScopes:
+        - Ancient

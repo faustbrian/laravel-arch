@@ -1,0 +1,6 @@
+version: 1.0.0
+definitions:
+  mails:
+    OrderShippedQueued:
+      subject: Order Shipped
+      shouldQueue: true

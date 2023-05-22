@@ -1,0 +1,13 @@
+version: 1.0.0
+definitions:
+  controllers:
+    web:
+      Statement:
+        resource: true
+        methods:
+          index:
+            - view: post.index with:posts
+          create:
+            - view: post.create
+          store:
+            - redirect: post.index

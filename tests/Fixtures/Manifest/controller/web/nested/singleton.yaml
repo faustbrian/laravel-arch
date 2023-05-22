@@ -1,0 +1,7 @@
+version: 1.0.0
+definitions:
+  controllers:
+    web:
+      Parent/NestedSingleton:
+        singleton: true
+        methods: ['store', 'update']

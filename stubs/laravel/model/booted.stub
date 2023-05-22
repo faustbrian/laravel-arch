@@ -1,0 +1,7 @@
+    /**
+     * The "booted" method of the model.
+     */
+    protected static function booted(): void
+    {
+{{ body }}
+    }

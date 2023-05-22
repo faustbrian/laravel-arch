@@ -1,0 +1,1 @@
+$postIds = User::where('post.title', $post->title)->take(3)->pluck('post.id');

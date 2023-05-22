@@ -1,0 +1,1 @@
+$request->session()->forget('user.name', $user->name);

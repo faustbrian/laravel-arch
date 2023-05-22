@@ -1,0 +1,7 @@
+    /**
+     * Remove the resource from storage.
+     */
+    public function destroy({{ parentModel }} ${{ parentModelVariable }}): never
+    {
+        abort(404);
+    }

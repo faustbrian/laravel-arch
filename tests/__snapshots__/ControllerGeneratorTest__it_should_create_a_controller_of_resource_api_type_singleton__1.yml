@@ -1,0 +1,42 @@
+created:
+    app/Http/Controllers/SingletonApiController.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace App\Http\Controllers;
+
+        use App\Http\Controllers\Controller;
+        use App\Http\Requests\StoreSingletonApiRequest;
+        use App\Http\Requests\UpdateSingletonApiRequest;
+        use App\Models\SingletonApi;
+
+        class SingletonApiController extends Controller
+        {
+            /**
+             * Create a new controller instance.
+             */
+            public function __construct()
+            {
+                        $this->authorizeResource(SingletonApi::class);
+
+            }
+
+            /**
+             * Store the newly created resource in storage.
+             */
+            public function store(StoreSingletonApiRequest $request): never
+            {
+                abort(404);
+            }
+
+            /**
+             * Update the resource in storage.
+             */
+            public function update(UpdateSingletonApiRequest $request)
+            {
+                //
+            }
+        }
+deleted: {  }
+updated: {  }

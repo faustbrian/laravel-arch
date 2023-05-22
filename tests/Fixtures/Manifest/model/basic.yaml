@@ -1,0 +1,19 @@
+version: 1.0.0
+definitions:
+  models:
+    User:
+      columns:
+        name: string
+        mail: string
+      relationships:
+        hasMany: Comment
+        hasManyThrough: Deployment Environment
+        hasOneThrough: Owner Car
+        belongsToMany: Comment
+        hasOne: Comment
+        belongsTo: Comment
+        morphOne: Image imageable
+        morphTo: Comment
+        morphMany: Comment commentable
+        morphToMany: Tag taggable
+        morphedByMany: Post taggable

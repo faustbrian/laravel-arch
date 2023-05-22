@@ -1,0 +1,20 @@
+created:
+    app/Http/Livewire/Search.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace App\Http\Livewire;
+
+        use Illuminate\Contracts\View\View;
+        use Livewire\Component;
+
+        class Search extends Component
+        {
+            public function render(): View
+            {
+                return view('livewire.search');
+            }
+        }
+deleted: {  }
+updated: {  }

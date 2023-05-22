@@ -1,0 +1,1 @@
+$posts = Post::count();

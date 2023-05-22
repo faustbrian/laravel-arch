@@ -1,0 +1,7 @@
+version: 1.0.0
+definitions:
+  mails:
+    OrderShippedWithMarkdownQueued:
+      subject: Order Shipped
+      shouldQueue: true
+      shouldBeMarkdown: true

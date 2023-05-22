@@ -1,0 +1,9 @@
+version: 1.0.0
+definitions:
+  models:
+    Morphs:
+      columns:
+        team: morphs
+
+  factories:
+    - Morphs

@@ -1,0 +1,33 @@
+created:
+    database/migrations/2023_01_01_000000_create_tagables_table.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        use Illuminate\Database\Migrations\Migration;
+        use Illuminate\Database\Schema\Blueprint;
+        use Illuminate\Support\Facades\Schema;
+
+        return new class() extends Migration
+        {
+            /**
+             * Run the migrations.
+             */
+            public function up(): void
+            {
+                Schema::create('tagables', function (Blueprint $table): void {
+                    $table->unsignedBigInteger('tag_id');
+                    $table->morphs('tagable');
+                });
+            }
+
+            /**
+             * Reverse the migrations.
+             */
+            public function down(): void
+            {
+                Schema::dropIfExists('tagables');
+            }
+        };
+deleted: {  }
+updated: {  }

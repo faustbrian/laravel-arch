@@ -1,0 +1,646 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property BombenProdukt\\\\Arch\\\\Artisan\\\\AbstractCommand\\:\\:\\$options \\(array\\<int, string\\>\\) does not accept array\\<int\\|string, string\\|null\\>\\.$#"
+			count: 1
+			path: src/Artisan/AbstractCommand.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Command\\\\BuildCommand\\:\\:outputStyle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Command/BuildCommand.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Command\\\\BuildCommand\\:\\:outputStyle\\(\\) has parameter \\$action with no type specified\\.$#"
+			count: 1
+			path: src/Command/BuildCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of function array_keys expects array, mixed given\\.$#"
+			count: 2
+			path: src/Command/BuildCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of function count expects array\\|Countable, mixed given\\.$#"
+			count: 1
+			path: src/Command/BuildCommand.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Environment\\\\GeneratorRepository\\:\\:findByAccessor\\(\\) should return BombenProdukt\\\\Arch\\\\Environment\\\\Generator but returns mixed\\.$#"
+			count: 1
+			path: src/Environment/GeneratorRepository.php
+
+		-
+			message: "#^PHPDoc tag @var above a method has no effect\\.$#"
+			count: 1
+			path: src/Environment/GeneratorRepository.php
+
+		-
+			message: "#^PHPDoc tag @var does not specify variable name\\.$#"
+			count: 1
+			path: src/Environment/GeneratorRepository.php
+
+		-
+			message: "#^Offset string on array\\<string, array\\<string\\>\\> on left side of \\?\\? always exists and is not nullable\\.$#"
+			count: 2
+			path: src/Generator/AbstractGenerator.php
+
+		-
+			message: "#^Parameter \\#1 \\$properties of static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToConstructor\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: src/Generator/AbstractGenerator.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function implode expects array\\<string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Generator/AbstractGenerator.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function implode expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Generator/AbstractGenerator.php
+
+		-
+			message: "#^Property BombenProdukt\\\\Arch\\\\Generator\\\\AbstractGenerator\\:\\:\\$output \\(array\\<string, array\\<string\\>\\>\\) does not accept array\\<string, array\\<string\\|null\\>\\>\\.$#"
+			count: 1
+			path: src/Generator/AbstractGenerator.php
+
+		-
+			message: "#^Cannot assign new offset to array\\<int\\<0, max\\>, string\\>\\|string\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ControllerGenerator.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of function count expects array\\|Countable, array\\<int\\<0, max\\>, string\\>\\|string given\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ControllerGenerator.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function implode expects array\\<string\\>, array\\<string, array\\<int\\<0, max\\>, string\\>\\|string\\> given\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ControllerGenerator.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function implode expects array\\|null, array\\<int\\<0, max\\>, string\\>\\|string given\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ControllerGenerator.php
+
+		-
+			message: "#^Cannot assign new offset to array\\<int\\<0, max\\>, string\\>\\|string\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ControllerTestGenerator.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of function count expects array\\|Countable, array\\<int\\<0, max\\>, string\\>\\|string given\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ControllerTestGenerator.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function implode expects array\\<string\\>, array\\<string, array\\<int\\<0, max\\>, string\\>\\|string\\> given\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ControllerTestGenerator.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function implode expects array\\|null, array\\<int\\<0, max\\>, string\\>\\|string given\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ControllerTestGenerator.php
+
+		-
+			message: "#^Match expression does not handle remaining value\\: true$#"
+			count: 1
+			path: src/Generator/Laravel/FactoryGenerator.php
+
+		-
+			message: "#^Parameter \\#1 \\$call of method BombenProdukt\\\\Arch\\\\Generator\\\\Laravel\\\\FactoryGenerator\\:\\:prependFaker\\(\\) expects string, string\\|null given\\.$#"
+			count: 2
+			path: src/Generator/Laravel/FactoryGenerator.php
+
+		-
+			message: "#^Parameter \\#2 \\$replace of function str_replace expects array\\|string, string\\|false given\\.$#"
+			count: 1
+			path: src/Generator/Laravel/FactoryGenerator.php
+
+		-
+			message: "#^Parameter \\#2 \\$value of static method Illuminate\\\\Support\\\\Str\\:\\:toArrayItem\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Generator/Laravel/FactoryGenerator.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 1
+			path: src/Generator/Laravel/MigrationGenerator.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 1
+			path: src/Generator/Laravel/MigrationGenerator.php
+
+		-
+			message: "#^Cannot assign new offset to array\\<int, string\\>\\|string\\.$#"
+			count: 1
+			path: src/Mixin/StrMixin.php
+
+		-
+			message: "#^Parameter \\#1 \\$accessor of method BombenProdukt\\\\Arch\\\\Environment\\\\GeneratorRepository\\:\\:findByAccessor\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Mixin/StrMixin.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, mixed given\\.$#"
+			count: 1
+			path: src/Mixin/StrMixin.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Column\\:\\:foreignKey\\(\\) should return string\\|null but returns mixed\\.$#"
+			count: 1
+			path: src/Model/Column.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between int and 'default' will always evaluate to false\\.$#"
+			count: 1
+			path: src/Model/Column.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Controller\\:\\:parentModel\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: src/Model/Controller.php
+
+		-
+			message: "#^Class BombenProdukt\\\\Arch\\\\Model\\\\GeneratorResult implements generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Model/GeneratorResult.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Index\\:\\:columns\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Model/Index.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Index\\:\\:type\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Model/Index.php
+
+		-
+			message: "#^Class BombenProdukt\\\\Arch\\\\Model\\\\Manifest has an uninitialized readonly property \\$arch\\. Assign it in the constructor\\.$#"
+			count: 1
+			path: src/Model/Manifest.php
+
+		-
+			message: "#^Class BombenProdukt\\\\Arch\\\\Model\\\\Manifest has an uninitialized readonly property \\$definitions\\. Assign it in the constructor\\.$#"
+			count: 1
+			path: src/Model/Manifest.php
+
+		-
+			message: "#^Readonly property BombenProdukt\\\\Arch\\\\Model\\\\Manifest\\:\\:\\$arch is assigned outside of the constructor\\.$#"
+			count: 1
+			path: src/Model/Manifest.php
+
+		-
+			message: "#^Readonly property BombenProdukt\\\\Arch\\\\Model\\\\Manifest\\:\\:\\$definitions is assigned outside of the constructor\\.$#"
+			count: 1
+			path: src/Model/Manifest.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Model\\:\\:belongsToMany\\(\\) should return array\\<BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\BelongsToMany\\> but returns array\\<BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\RelationshipInterface\\>\\.$#"
+			count: 1
+			path: src/Model/Model.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Model\\:\\:morphedByMany\\(\\) should return array\\<BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\MorphedByMany\\> but returns array\\<BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\RelationshipInterface\\>\\.$#"
+			count: 1
+			path: src/Model/Model.php
+
+		-
+			message: "#^Call to an undefined method BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\AbstractRelationship\\:\\:name\\(\\)\\.$#"
+			count: 1
+			path: src/Model/Model/Relationship/AbstractRelationship.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Model/Model/Relationship/AbstractRelationship.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\MorphMany\\:\\:type\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: src/Model/Model/Relationship/MorphMany.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\MorphOne\\:\\:type\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: src/Model/Model/Relationship/MorphOne.php
+
+		-
+			message: "#^Match expression does not handle remaining value\\: string$#"
+			count: 2
+			path: src/Model/Model/Relationship/RelationshipFactory.php
+
+		-
+			message: "#^Interface BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\RelationshipInterface extends generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Model/Model/Relationship/RelationshipInterface.php
+
+		-
+			message: "#^Parameter \\#1 \\$base of static method BombenProdukt\\\\Arch\\\\Path\\:\\:path\\(\\) expects string, mixed given\\.$#"
+			count: 3
+			path: src/Path.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/ServiceProvider.php
+
+		-
+			message: "#^Parameter \\#1 \\$abstract of method Illuminate\\\\Contracts\\\\Container\\\\Container\\:\\:make\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/ServiceProvider.php
+
+		-
+			message: "#^Parameter \\#2 \\$concrete of method Illuminate\\\\Contracts\\\\Container\\\\Container\\:\\:singleton\\(\\) expects Closure\\|string\\|null, mixed given\\.$#"
+			count: 6
+			path: src/ServiceProvider.php
+
+		-
+			message: "#^Parameter \\#1 \\$properties of static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\) expects array, array\\|null given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of function count expects array\\|Countable, array\\|null given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Parameter \\$onConnection of class BombenProdukt\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Parameter \\$onQueue of class BombenProdukt\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Parameter \\$recipient of class BombenProdukt\\\\Arch\\\\Statement\\\\Laravel\\\\MailStatement constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Parameter \\$recipient of class BombenProdukt\\\\Arch\\\\Statement\\\\Laravel\\\\NotificationStatement constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Variable \\$column might not be defined\\.$#"
+			count: 3
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Variable \\$pluck_field might not be defined\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceCollectionStatement.php
+
+		-
+			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceStatement.php
+
+		-
+			message: "#^Cannot cast mixed to int\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Parameter \\#1 \\$properties of static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\) expects array, array\\|null given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of function count expects array\\|Countable, array\\|null given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Property BombenProdukt\\\\Arch\\\\Statement\\\\Laravel\\\\ValidateStatement\\:\\:\\$rules is never read, only written\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ValidateStatement.php
+
+		-
+			message: "#^Cannot access offset 'metadata' on mixed\\.$#"
+			count: 4
+			path: src/Tokenizer/AbstractTokenizer.php
+
+		-
+			message: "#^Parameter \\$isNullable of class BombenProdukt\\\\Arch\\\\Model\\\\Property constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/AbstractTokenizer.php
+
+		-
+			message: "#^Parameter \\$isReadonly of class BombenProdukt\\\\Arch\\\\Model\\\\Property constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/AbstractTokenizer.php
+
+		-
+			message: "#^Parameter \\$type of class BombenProdukt\\\\Arch\\\\Model\\\\Property constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/AbstractTokenizer.php
+
+		-
+			message: "#^Parameter \\$visibility of class BombenProdukt\\\\Arch\\\\Model\\\\Property constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/AbstractTokenizer.php
+
+		-
+			message: "#^Parameter \\$inbound of class BombenProdukt\\\\Arch\\\\Model\\\\Cast constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/CastTokenizer.php
+
+		-
+			message: "#^Parameter \\$castsAttributes of class BombenProdukt\\\\Arch\\\\Model\\\\Castable constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/CastableTokenizer.php
+
+		-
+			message: "#^Match expression does not handle remaining value\\: string$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Parameter \\#1 \\$template of static method BombenProdukt\\\\Arch\\\\Renderer\\\\StringRenderer\\:\\:render\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Parameter \\$authorizeResource of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Parameter \\$creatable of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Parameter \\$invokable of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Parameter \\$plain of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Parameter \\$resource of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Parameter \\$singleton of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldBroadcast of class BombenProdukt\\\\Arch\\\\Model\\\\Event constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/EventTokenizer.php
+
+		-
+			message: "#^Parameter \\$rules of class BombenProdukt\\\\Arch\\\\Model\\\\FormRequest constructor expects array, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/FormRequestTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldBeUnique of class BombenProdukt\\\\Arch\\\\Model\\\\Job constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/JobTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldQueue of class BombenProdukt\\\\Arch\\\\Model\\\\Job constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/JobTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldBeMarkdown of class BombenProdukt\\\\Arch\\\\Model\\\\Mail constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MailTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldQueue of class BombenProdukt\\\\Arch\\\\Model\\\\Mail constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MailTokenizer.php
+
+		-
+			message: "#^Parameter \\$view of class BombenProdukt\\\\Arch\\\\Model\\\\Mail constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MailTokenizer.php
+
+		-
+			message: "#^Parameter \\$columns of class BombenProdukt\\\\Arch\\\\Model\\\\Migration constructor expects array, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MigrationTokenizer.php
+
+		-
+			message: "#^Parameter \\$indexes of class BombenProdukt\\\\Arch\\\\Model\\\\Migration constructor expects array, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MigrationTokenizer.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:buildColumn\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Parameter \\#2 \\$string of function explode expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Parameter \\#4 \\$attributes of class BombenProdukt\\\\Arch\\\\Model\\\\Column constructor expects array, array\\<int, string\\>\\|string given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldBeMarkdown of class BombenProdukt\\\\Arch\\\\Model\\\\Notification constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/NotificationTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldQueue of class BombenProdukt\\\\Arch\\\\Model\\\\Notification constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/NotificationTokenizer.php
+
+		-
+			message: "#^Parameter \\$view of class BombenProdukt\\\\Arch\\\\Model\\\\Notification constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/NotificationTokenizer.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of static method Illuminate\\\\Support\\\\Arr\\:\\:get\\(\\) expects array\\|ArrayAccess, mixed given\\.$#"
+			count: 2
+			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
+
+		-
+			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Action constructor expects string, mixed given\\.$#"
+			count: 2
+			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldBeDestructive of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Action constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldBeQueued of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Action constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/DashboardTokenizer.php
+
+		-
+			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Dashboard constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/DashboardTokenizer.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/FilterTokenizer.php
+
+		-
+			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Filter constructor expects string, mixed given\\.$#"
+			count: 2
+			path: src/Tokenizer/Laravel/Nova/FilterTokenizer.php
+
+		-
+			message: "#^Parameter \\$type of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Filter constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/FilterTokenizer.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/LensTokenizer.php
+
+		-
+			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Lens constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/LensTokenizer.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/MetricTokenizer.php
+
+		-
+			message: "#^Cannot access offset 'type' on mixed\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/MetricTokenizer.php
+
+		-
+			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Metric constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/MetricTokenizer.php
+
+		-
+			message: "#^Parameter \\$type of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Metric constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/MetricTokenizer.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/ResourceTokenizer.php
+
+		-
+			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Resource constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/ResourceTokenizer.php
+
+		-
+			message: "#^Parameter \\$plain of class BombenProdukt\\\\Arch\\\\Model\\\\Observer constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ObserverTokenizer.php
+
+		-
+			message: "#^Parameter \\$plain of class BombenProdukt\\\\Arch\\\\Model\\\\Policy constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/PolicyTokenizer.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of static method Illuminate\\\\Support\\\\Facades\\\\App\\:\\:call\\(\\) expects \\(callable\\(\\)\\: mixed\\)\\|string, array\\{string, 'from'\\} given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/StatementTokenizer.php
+
+		-
+			message: "#^Parameter \\$inline of class BombenProdukt\\\\Arch\\\\Model\\\\Livewire constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Livewire/ComponentTokenizer.php
+
+		-
+			message: "#^Parameter \\$view of class BombenProdukt\\\\Arch\\\\Model\\\\Livewire constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Livewire/ComponentTokenizer.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Transformer\\\\RuleTransformer\\:\\:betweenRuleForColumn\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Transformer/RuleTransformer.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Transformer\\\\RuleTransformer\\:\\:fromColumn\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Transformer/RuleTransformer.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Transformer\\\\RuleTransformer\\:\\:overrideStringRuleForSpecialNames\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Transformer/RuleTransformer.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Transformer\\\\RuleTransformer\\:\\:overrideStringRuleForSpecialNames\\(\\) has parameter \\$name with no type specified\\.$#"
+			count: 1
+			path: src/Transformer/RuleTransformer.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Arch\\\\Tree\\\\ArrayTree\\:\\:get\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Tree/ArrayTree.php

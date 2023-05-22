@@ -1,0 +1,1 @@
+$response->assertRedirect(action([{{ controller }}::class, '{{ method }}']));

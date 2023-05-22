@@ -1,0 +1,11 @@
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+// use {{ namespacedModel }};
+// use {{ namespacedUserModel }};
+
+class {{ class }}
+{
+    //
+}

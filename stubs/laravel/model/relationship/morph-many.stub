@@ -1,0 +1,4 @@
+    public function {{ relationship }}(): MorphMany
+    {
+        return $this->morphMany({{ related }}::class, '{{ name }}');
+    }

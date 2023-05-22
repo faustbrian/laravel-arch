@@ -1,0 +1,25 @@
+Deleted:
+- app/Http/Controllers/PostController.php
+- app/Http/Controllers/CommentController.php
+- tests/Feature/Http/Controllers/PostControllerTest.php
+- tests/Feature/Http/Controllers/CommentControllerTest.php
+- database/factories/PostFactory.php
+- database/factories/CommentFactory.php
+- app/Http/Requests/StorePostRequest.php
+- app/Http/Requests/UpdatePostRequest.php
+- app/Http/Requests/StoreCommentRequest.php
+- app/Http/Requests/UpdateCommentRequest.php
+- database/migrations/2023_01_01_000000_create_posts_table.php
+- database/migrations/2023_01_01_000001_create_comments_table.php
+- database/migrations/2023_01_01_000002_create_comment_post_table.php
+- database/migrations/2023_01_01_000003_create_tagables_table.php
+- app/Models/Post.php
+- app/Models/Comment.php
+- tests/Unit/Models/PostTest.php
+- tests/Unit/Models/CommentTest.php
+- app/Policies/PostPolicy.php
+- app/Policies/CommentPolicy.php
+- app/Http/Resources/PostResource.php
+- app/Http/Resources/CommentResource.php
+- database/seeders/PostSeeder.php
+- database/seeders/CommentSeeder.php

@@ -10,8 +10,9 @@ use BombenProdukt\Arch\Reporter\Report;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static GeneratorResult decode(string $path)
+ * @method static GeneratorResult decode()
  * @method static Report          encode(GeneratorResult $result)
+ * @method static bool            exists()
  */
 final class Reporter extends Facade
 {

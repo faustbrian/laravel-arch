@@ -11,9 +11,9 @@ use Illuminate\Support\Facades\File;
 use function Spatie\Snapshots\assertMatchesSnapshot;
 
 it('deletes every file that was previously created', function (): void {
-    File::expects('missing')
+    File::expects('exists')
         ->with(Path::arch('report.yaml'))
-        ->andReturn(false);
+        ->andReturn(true);
 
     File::expects('get')
         ->with(Path::arch('report.yaml'))

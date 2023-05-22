@@ -11,5 +11,7 @@ interface ReporterInterface
 {
     public function encode(GeneratorResult $result): Report;
 
-    public function decode(string $path): GeneratorResult;
+    public function decode(): GeneratorResult;
+
+    public function exists(): bool;
 }

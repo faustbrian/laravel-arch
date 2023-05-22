@@ -25,7 +25,7 @@ final readonly class JsonReporter implements ReporterInterface
     public function encode(GeneratorResult $result): Report
     {
         return new Report(
-            path: Path::arch('report.json'),
+            path: $this->filePath(),
             contents: $this->serializer->encode(
                 $result->toArray(),
                 'json',
@@ -34,8 +34,18 @@ final readonly class JsonReporter implements ReporterInterface
         );
     }
 
-    public function decode(string $path): GeneratorResult
+    public function decode(): GeneratorResult
     {
-        return $this->serializer->deserialize(File::get($path), GeneratorResult::class, 'json');
+        return $this->serializer->deserialize(File::get($this->filePath()), GeneratorResult::class, 'json');
+    }
+
+    public function exists(): bool
+    {
+        return File::exists($this->filePath());
+    }
+
+    private function filePath(): string
+    {
+        return Path::arch('report.json');
     }
 }

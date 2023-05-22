@@ -24,7 +24,7 @@ final readonly class YamlReporter implements ReporterInterface
     public function encode(GeneratorResult $result): Report
     {
         return new Report(
-            path: Path::arch('report.yaml'),
+            path: $this->filePath(),
             contents: $this->serializer->encode(
                 $result->toArray(),
                 'yaml',
@@ -33,8 +33,18 @@ final readonly class YamlReporter implements ReporterInterface
         );
     }
 
-    public function decode(string $path): GeneratorResult
+    public function decode(): GeneratorResult
     {
-        return $this->serializer->deserialize(File::get($path), GeneratorResult::class, 'yaml');
+        return $this->serializer->deserialize(File::get($this->filePath()), GeneratorResult::class, 'yaml');
+    }
+
+    public function exists(): bool
+    {
+        return File::exists($this->filePath());
+    }
+
+    private function filePath(): string
+    {
+        return Path::arch('report.yaml');
     }
 }

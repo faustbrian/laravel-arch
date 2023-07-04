@@ -134,14 +134,14 @@ abstract class AbstractGenerator implements GeneratorInterface
         }
     }
 
-     protected function accessor(): string
-     {
-         return Str::of(class_basename(static::class))
-             ->beforeLast('Generator')
-             ->camel()
-             ->plural()
-             ->toString();
-     }
+    protected function accessor(): string
+    {
+        return Str::of(class_basename(static::class))
+            ->beforeLast('Generator')
+            ->camel()
+            ->plural()
+            ->toString();
+    }
 
     private function createFileOnDisk(string $path, string $content): void
     {

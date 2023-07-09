@@ -14,7 +14,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/BombenProdukt/laravel-arch",
+    "homepage": "https://github.com/faustbrian/laravel-arch",
     "require": {
         "php": "^8.2",
         "bombenprodukt/laravel-package-powerpack": "^1.0",

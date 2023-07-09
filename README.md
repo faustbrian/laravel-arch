@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/BombenProdukt/laravel-arch/actions">
+    <a href="https://github.com/faustbrian/laravel-arch/actions">
         <img src="https://badge.sh/github/check-runs/BombenProdukt/laravel-arch" alt="Checks" />
     </a>
     <a href="https://packagist.org/packages/bombenprodukt/laravel-arch">
@@ -24,7 +24,7 @@
 
 ## About Laravel Arch
 
-This project was created by, and is maintained by [BombenProdukt](https://github.com/BombenProdukt), and is an opinionated code generator for Laravel. Be sure to browse through the [changelog](CHANGELOG.md), [code of conduct](.github/CODE_OF_CONDUCT.md), [contribution guidelines](.github/CONTRIBUTING.md), [license](LICENSE), and [security policy](.github/SECURITY.md).
+This project was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and is an opinionated code generator for Laravel. Be sure to browse through the [changelog](CHANGELOG.md), [code of conduct](.github/CODE_OF_CONDUCT.md), [contribution guidelines](.github/CONTRIBUTING.md), [license](LICENSE), and [security policy](.github/SECURITY.md).
 
 > **Warning**
 > This package is still in development and is not ready for production use.

@@ -7,20 +7,6 @@
     <em>The friendly character in the logo is our mascot, Archibald the Beaver, a passionate builder.</em>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/laravel-arch/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/laravel-arch" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-arch">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/laravel-arch" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-arch">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/laravel-arch" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-arch">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/laravel-arch" alt="License" />
-    </a>
-</p>
 
 ## About Laravel Arch
 

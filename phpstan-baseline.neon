@@ -41,6 +41,11 @@ parameters:
 			path: src/Environment/GeneratorRepository.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 2
+			path: src/Generator/AbstractGenerator.php
+
+		-
 			message: "#^Offset string on array\\<string, array\\<string\\>\\> on left side of \\?\\? always exists and is not nullable\\.$#"
 			count: 2
 			path: src/Generator/AbstractGenerator.php
@@ -86,6 +91,11 @@ parameters:
 			path: src/Generator/Laravel/ControllerGenerator.php
 
 		-
+			message: "#^Short ternary operator is not allowed\\. Use null coalesce operator if applicable or consider using long ternary\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ControllerGenerator.php
+
+		-
 			message: "#^Cannot assign new offset to array\\<int\\<0, max\\>, string\\>\\|string\\.$#"
 			count: 1
 			path: src/Generator/Laravel/ControllerTestGenerator.php
@@ -106,7 +116,32 @@ parameters:
 			path: src/Generator/Laravel/ControllerTestGenerator.php
 
 		-
+			message: "#^Short ternary operator is not allowed\\. Use null coalesce operator if applicable or consider using long ternary\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ControllerTestGenerator.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 4
+			path: src/Generator/Laravel/FactoryGenerator.php
+
+		-
 			message: "#^Match expression does not handle remaining value\\: true$#"
+			count: 1
+			path: src/Generator/Laravel/FactoryGenerator.php
+
+		-
+			message: "#^Only booleans are allowed in &&, mixed given on the right side\\.$#"
+			count: 1
+			path: src/Generator/Laravel/FactoryGenerator.php
+
+		-
+			message: "#^Only booleans are allowed in &&, string given on the left side\\.$#"
+			count: 1
+			path: src/Generator/Laravel/FactoryGenerator.php
+
+		-
+			message: "#^Only booleans are allowed in an if condition, string\\|null given\\.$#"
 			count: 1
 			path: src/Generator/Laravel/FactoryGenerator.php
 
@@ -126,6 +161,16 @@ parameters:
 			path: src/Generator/Laravel/FactoryGenerator.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Generator/Laravel/FormRequestGenerator.php
+
+		-
+			message: "#^Short ternary operator is not allowed\\. Use null coalesce operator if applicable or consider using long ternary\\.$#"
+			count: 1
+			path: src/Generator/Laravel/FormRequestGenerator.php
+
+		-
 			message: "#^Unable to resolve the template type TKey in call to function collect$#"
 			count: 1
 			path: src/Generator/Laravel/MigrationGenerator.php
@@ -134,6 +179,26 @@ parameters:
 			message: "#^Unable to resolve the template type TValue in call to function collect$#"
 			count: 1
 			path: src/Generator/Laravel/MigrationGenerator.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 3
+			path: src/Generator/Laravel/ModelGenerator.php
+
+		-
+			message: "#^Foreach overwrites \\$routes with its value variable\\.$#"
+			count: 1
+			path: src/Generator/Laravel/RouteGenerator.php
+
+		-
+			message: "#^Only booleans are allowed in an if condition, int\\<0, max\\> given\\.$#"
+			count: 1
+			path: src/Generator/Laravel/RouteGenerator.php
+
+		-
+			message: "#^Dynamic call to static method Illuminate\\\\Support\\\\Facades\\\\File\\:\\:get\\(\\)\\.$#"
+			count: 1
+			path: src/Mixin/FileMixin.php
 
 		-
 			message: "#^Cannot assign new offset to array\\<int, string\\>\\|string\\.$#"
@@ -149,6 +214,11 @@ parameters:
 			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, mixed given\\.$#"
 			count: 1
 			path: src/Mixin/StrMixin.php
+
+		-
+			message: "#^Short ternary operator is not allowed\\. Use null coalesce operator if applicable or consider using long ternary\\.$#"
+			count: 1
+			path: src/Model/AbstractData.php
 
 		-
 			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Column\\:\\:foreignKey\\(\\) should return string\\|null but returns mixed\\.$#"
@@ -179,6 +249,16 @@ parameters:
 			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Index\\:\\:type\\(\\) has no return type specified\\.$#"
 			count: 1
 			path: src/Model/Index.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Model/Livewire.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Model/Mail.php
 
 		-
 			message: "#^Class BombenProdukt\\\\Arch\\\\Model\\\\Manifest has an uninitialized readonly property \\$arch\\. Assign it in the constructor\\.$#"
@@ -241,6 +321,11 @@ parameters:
 			path: src/Model/Model/Relationship/RelationshipInterface.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Model/ViewComponent.php
+
+		-
 			message: "#^Parameter \\#1 \\$base of static method BombenProdukt\\\\Arch\\\\Path\\:\\:path\\(\\) expects string, mixed given\\.$#"
 			count: 3
 			path: src/Path.php
@@ -261,6 +346,11 @@ parameters:
 			path: src/ServiceProvider.php
 
 		-
+			message: "#^Only booleans are allowed in a ternary operator condition, array given\\.$#"
+			count: 1
+			path: src/Statement/Inertia/RenderStatement.php
+
+		-
 			message: "#^Parameter \\#1 \\$properties of static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\) expects array, array\\|null given\\.$#"
 			count: 1
 			path: src/Statement/Laravel/ActionRedirectStatement.php
@@ -269,6 +359,16 @@ parameters:
 			message: "#^Parameter \\#1 \\$value of function count expects array\\|Countable, array\\|null given\\.$#"
 			count: 1
 			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 2
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Only booleans are allowed in a ternary operator condition, array given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
 
 		-
 			message: "#^Parameter \\$onConnection of class BombenProdukt\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement constructor expects string\\|null, mixed given\\.$#"
@@ -311,6 +411,11 @@ parameters:
 			path: src/Statement/Laravel/NotifyStatement.php
 
 		-
+			message: "#^Only booleans are allowed in an if condition, mixed given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
 			message: "#^Variable \\$column might not be defined\\.$#"
 			count: 3
 			path: src/Statement/Laravel/QueryStatement.php
@@ -319,6 +424,11 @@ parameters:
 			message: "#^Variable \\$pluck_field might not be defined\\.$#"
 			count: 1
 			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceCollectionStatement.php
 
 		-
 			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
@@ -332,6 +442,11 @@ parameters:
 
 		-
 			message: "#^Cannot cast mixed to int\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Only booleans are allowed in an if condition, mixed given\\.$#"
 			count: 1
 			path: src/Statement/Laravel/RespondStatement.php
 
@@ -356,8 +471,18 @@ parameters:
 			path: src/Statement/Laravel/ValidateStatement.php
 
 		-
+			message: "#^Only booleans are allowed in a ternary operator condition, array given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ViewStatement.php
+
+		-
 			message: "#^Cannot access offset 'metadata' on mixed\\.$#"
 			count: 4
+			path: src/Tokenizer/AbstractTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 2
 			path: src/Tokenizer/AbstractTokenizer.php
 
 		-
@@ -381,9 +506,19 @@ parameters:
 			path: src/Tokenizer/AbstractTokenizer.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/CastTokenizer.php
+
+		-
 			message: "#^Parameter \\$inbound of class BombenProdukt\\\\Arch\\\\Model\\\\Cast constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/CastTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/CastableTokenizer.php
 
 		-
 			message: "#^Parameter \\$castsAttributes of class BombenProdukt\\\\Arch\\\\Model\\\\Castable constructor expects bool, mixed given\\.$#"
@@ -391,8 +526,33 @@ parameters:
 			path: src/Tokenizer/Laravel/CastableTokenizer.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ChannelTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/CommandTokenizer.php
+
+		-
+			message: "#^BombenProdukt\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ControllerTokenizer\\:\\:__construct\\(\\) does not call parent constructor from BombenProdukt\\\\Arch\\\\Tokenizer\\\\AbstractTokenizer\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 2
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
 			message: "#^Match expression does not handle remaining value\\: string$#"
 			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Only booleans are allowed in an if condition, mixed given\\.$#"
+			count: 2
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
 		-
@@ -431,14 +591,39 @@ parameters:
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/EventTokenizer.php
+
+		-
 			message: "#^Parameter \\$shouldBroadcast of class BombenProdukt\\\\Arch\\\\Model\\\\Event constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/EventTokenizer.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/FactoryTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/FormRequestTokenizer.php
+
+		-
 			message: "#^Parameter \\$rules of class BombenProdukt\\\\Arch\\\\Model\\\\FormRequest constructor expects array, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/FormRequestTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/GlobalScopeTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/JobTokenizer.php
 
 		-
 			message: "#^Parameter \\$shouldBeUnique of class BombenProdukt\\\\Arch\\\\Model\\\\Job constructor expects bool, mixed given\\.$#"
@@ -449,6 +634,11 @@ parameters:
 			message: "#^Parameter \\$shouldQueue of class BombenProdukt\\\\Arch\\\\Model\\\\Job constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/JobTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MailTokenizer.php
 
 		-
 			message: "#^Parameter \\$shouldBeMarkdown of class BombenProdukt\\\\Arch\\\\Model\\\\Mail constructor expects bool, mixed given\\.$#"
@@ -466,6 +656,16 @@ parameters:
 			path: src/Tokenizer/Laravel/MailTokenizer.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MiddlewareTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MigrationTokenizer.php
+
+		-
 			message: "#^Parameter \\$columns of class BombenProdukt\\\\Arch\\\\Model\\\\Migration constructor expects array, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/MigrationTokenizer.php
@@ -476,7 +676,22 @@ parameters:
 			path: src/Tokenizer/Laravel/MigrationTokenizer.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 3
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
 			message: "#^Method BombenProdukt\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:buildColumn\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Only booleans are allowed in an if condition, array given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Only booleans are allowed in an if condition, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ModelTokenizer.php
 
@@ -489,6 +704,16 @@ parameters:
 			message: "#^Parameter \\#4 \\$attributes of class BombenProdukt\\\\Arch\\\\Model\\\\Column constructor expects array, array\\<int, string\\>\\|string given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Variable method call on \\$this\\(BombenProdukt\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\)\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/NotificationTokenizer.php
 
 		-
 			message: "#^Parameter \\$shouldBeMarkdown of class BombenProdukt\\\\Arch\\\\Model\\\\Notification constructor expects bool, mixed given\\.$#"
@@ -507,6 +732,11 @@ parameters:
 
 		-
 			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
 
@@ -536,12 +766,22 @@ parameters:
 			path: src/Tokenizer/Laravel/Nova/DashboardTokenizer.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/DashboardTokenizer.php
+
+		-
 			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Dashboard constructor expects string, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/DashboardTokenizer.php
 
 		-
 			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/FilterTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/FilterTokenizer.php
 
@@ -561,6 +801,11 @@ parameters:
 			path: src/Tokenizer/Laravel/Nova/LensTokenizer.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/LensTokenizer.php
+
+		-
 			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Lens constructor expects string, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/LensTokenizer.php
@@ -572,6 +817,11 @@ parameters:
 
 		-
 			message: "#^Cannot access offset 'type' on mixed\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/MetricTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/MetricTokenizer.php
 
@@ -591,9 +841,19 @@ parameters:
 			path: src/Tokenizer/Laravel/Nova/ResourceTokenizer.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/ResourceTokenizer.php
+
+		-
 			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Resource constructor expects string, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/ResourceTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ObserverTokenizer.php
 
 		-
 			message: "#^Parameter \\$plain of class BombenProdukt\\\\Arch\\\\Model\\\\Observer constructor expects bool, mixed given\\.$#"
@@ -601,14 +861,74 @@ parameters:
 			path: src/Tokenizer/Laravel/ObserverTokenizer.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/PivotTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/PolicyTokenizer.php
+
+		-
 			message: "#^Parameter \\$plain of class BombenProdukt\\\\Arch\\\\Model\\\\Policy constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/PolicyTokenizer.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ResourceCollectionTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ResourceTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/RouteTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/RuleTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/SeederTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ServiceProviderTokenizer.php
+
+		-
 			message: "#^Parameter \\#1 \\$callback of static method Illuminate\\\\Support\\\\Facades\\\\App\\:\\:call\\(\\) expects \\(callable\\(\\)\\: mixed\\)\\|string, array\\{string, 'from'\\} given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/StatementTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ViewComponentTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ViewComposerTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ViewTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Livewire/ComponentTokenizer.php
 
 		-
 			message: "#^Parameter \\$inline of class BombenProdukt\\\\Arch\\\\Model\\\\Livewire constructor expects bool, mixed given\\.$#"
@@ -619,6 +939,11 @@ parameters:
 			message: "#^Parameter \\$view of class BombenProdukt\\\\Arch\\\\Model\\\\Livewire constructor expects string\\|null, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Livewire/ComponentTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Transformer/RuleTransformer.php
 
 		-
 			message: "#^Method BombenProdukt\\\\Arch\\\\Transformer\\\\RuleTransformer\\:\\:betweenRuleForColumn\\(\\) has no return type specified\\.$#"
@@ -637,6 +962,16 @@ parameters:
 
 		-
 			message: "#^Method BombenProdukt\\\\Arch\\\\Transformer\\\\RuleTransformer\\:\\:overrideStringRuleForSpecialNames\\(\\) has parameter \\$name with no type specified\\.$#"
+			count: 1
+			path: src/Transformer/RuleTransformer.php
+
+		-
+			message: "#^Only booleans are allowed in an if condition, array given\\.$#"
+			count: 1
+			path: src/Transformer/RuleTransformer.php
+
+		-
+			message: "#^Only booleans are allowed in \\|\\|, array given on the left side\\.$#"
 			count: 1
 			path: src/Transformer/RuleTransformer.php
 

@@ -22,7 +22,7 @@
         "league/commonmark": "^2.4",
         "spatie/laravel-data": "^3.5",
         "spatie/regex": "^3.1",
-        "symfony/serializer": "^6.2",
+        "symfony/serializer": "^7.0",
         "symfony/yaml": "^6.2",
         "twig/twig": "^3.6"
     },

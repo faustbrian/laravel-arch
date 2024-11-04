@@ -1,0 +1,7 @@
+created:
+    resources/views/livewire/search.blade.php: |
+        <div>
+            Very little is needed to make a happy life. - Marcus Aurelius
+        </div>
+deleted: {  }
+updated: {  }

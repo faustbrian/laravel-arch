@@ -1,0 +1,4 @@
+    public function scope{{ name }}(Builder $query): void
+    {
+        //
+    }

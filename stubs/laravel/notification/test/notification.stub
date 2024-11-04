@@ -1,0 +1,3 @@
+Notification::fake();
+
+Notification::assertSentTo([${{ recipient }}], {{ class }}::class);

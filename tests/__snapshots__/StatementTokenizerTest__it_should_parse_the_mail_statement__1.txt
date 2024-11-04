@@ -1,0 +1,1 @@
+Mail::to($post->author)->send(new ReviewPost($post));

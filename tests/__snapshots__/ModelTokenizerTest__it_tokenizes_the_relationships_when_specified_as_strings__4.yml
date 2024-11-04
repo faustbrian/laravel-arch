@@ -1,0 +1,6 @@
+related: Owner
+through: Car
+firstKey: null
+secondKey: null
+localKey: null
+secondLocalKey: null

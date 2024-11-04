@@ -1,0 +1,7 @@
+version: 1.0.0
+definitions:
+  nova:
+    actions:
+      DeleteUserData:
+        shouldBeDestructive: true
+        shouldBeQueued: true

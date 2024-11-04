@@ -1,0 +1,1 @@
+private string $name, public readonly int $age = "0"

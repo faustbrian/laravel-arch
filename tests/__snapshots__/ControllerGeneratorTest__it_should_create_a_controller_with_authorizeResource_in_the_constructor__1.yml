@@ -1,0 +1,100 @@
+created:
+    app/Http/Controllers/AuthorizedController.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace App\Http\Controllers;
+
+        use App\Http\Controllers\Controller;
+        use App\Http\Requests\StoreAuthorizedRequest;
+        use App\Http\Requests\UpdateAuthorizedRequest;
+        use App\Models\Authorized;
+        use Illuminate\Support\Facades\Redirect;
+        use Illuminate\Support\Facades\View;
+
+        class AuthorizedController extends Controller
+        {
+            /**
+             * Create a new controller instance.
+             */
+            public function __construct()
+            {
+                        $this->authorizeResource(Authorized::class);
+
+            }
+
+            /**
+             * Display a listing of the resource.
+             */
+            public function index()
+            {
+                $authorizeds = Authorized::all(authorizeds)->get();
+                
+                return view('authorized.index', ['authorizeds' => $authorizeds]);
+            }
+
+            /**
+             * Show the form for creating a new resource.
+             */
+            public function create()
+            {
+                return view('authorized.create');
+            }
+
+            /**
+             * Store a newly created resource in storage.
+             */
+            public function store(StoreAuthorizedRequest $request)
+            {
+                
+                
+                $authorized->save();
+                
+                $request->session()->flash('authorized.id', $authorized->id);
+                
+                return Redirect::route('authorized.index');
+            }
+
+            /**
+             * Display the specified resource.
+             */
+            public function show(Authorized $authorized)
+            {
+                return view('authorized.show', ['authorized' => $authorized]);
+            }
+
+            /**
+             * Show the form for editing the specified resource.
+             */
+            public function edit(Authorized $authorized)
+            {
+                return view('authorized.edit', ['authorized' => $authorized]);
+            }
+
+            /**
+             * Update the specified resource in storage.
+             */
+            public function update(UpdateAuthorizedRequest $request, Authorized $authorized)
+            {
+                
+                
+                $authorized->update(['authorized' => $authorized]);
+                
+                $request->session()->flash('authorized.id', $authorized->id);
+                
+                return Redirect::route('authorizeds.index');
+            }
+
+            /**
+             * Remove the specified resource from storage.
+             */
+            public function destroy(Authorized $authorized)
+            {
+                $authorized->delete();
+                
+                return Redirect::route('authorizeds.index');
+            }
+        }
+deleted: {  }
+updated: {  }

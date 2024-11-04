@@ -1,0 +1,9 @@
+version: 1.0.0
+definitions:
+  models:
+    Foreign:
+      columns:
+        team_id: unsignedInteger foreign
+
+  factories:
+    - Foreign

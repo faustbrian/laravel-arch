@@ -1,0 +1,22 @@
+arch: 1.0.0
+definitions:
+  models:
+    Post:
+      columns:
+        user_id: id foreign
+      relationships:
+        hasMany: Comment
+    Comment:
+      columns:
+        body: string:140
+      relationships:
+        hasMany: Rating
+        hasManyThrough: Deployment Environment
+        hasOneThrough: Owner Car
+        belongsToMany: Post
+        hasOne: User
+        belongsTo: Post
+        morphOne: Image imageable
+        morphTo: author
+        morphMany: Comment commentable
+        morphToMany: Tag taggable

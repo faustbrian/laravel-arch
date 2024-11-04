@@ -1,0 +1,7 @@
+    /**
+     * Show the form for creating the new resource.
+     */
+    public function create({{ parentModel }} ${{ parentModelVariable }}): never
+    {
+        abort(404);
+    }

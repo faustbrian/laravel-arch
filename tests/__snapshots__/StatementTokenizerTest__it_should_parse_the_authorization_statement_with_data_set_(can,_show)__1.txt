@@ -1,0 +1,1 @@
+        abort_unless($request->user()->can('show', $user), 403);

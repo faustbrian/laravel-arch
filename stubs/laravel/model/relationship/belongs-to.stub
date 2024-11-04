@@ -1,0 +1,4 @@
+    public function {{ relationship }}(): BelongsTo
+    {
+        return $this->belongsTo({{ related }}::class);
+    }

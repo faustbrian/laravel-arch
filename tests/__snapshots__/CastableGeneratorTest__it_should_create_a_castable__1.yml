@@ -1,0 +1,26 @@
+created:
+    app/Castables/Address.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace App\Castables;
+
+        use Illuminate\Contracts\Database\Eloquent\Castable;
+        use InvalidArgumentException;
+
+        class Address implements Castable
+        {
+            /**
+             * Get the caster class to use when casting from / to this cast target.
+             *
+             * @param  array  $arguments
+             * @return mixed
+             */
+            public static function castUsing(array $arguments): mixed
+            {
+                //
+            }
+        }
+deleted: {  }
+updated: {  }

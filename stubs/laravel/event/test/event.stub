@@ -1,0 +1,3 @@
+Event::fake();
+
+Event::assertDispatched({{ class }}::class);

@@ -1,0 +1,1 @@
+return Redirect::action([App\Http\Controllers\PostController::class, 'show'], ['id' => $id]);

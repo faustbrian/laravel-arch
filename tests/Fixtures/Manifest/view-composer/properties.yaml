@@ -1,0 +1,8 @@
+version: 1.0.0
+definitions:
+  viewComposers:
+    Profile:
+      metadata:
+        constructor:
+          properties:
+            key: string

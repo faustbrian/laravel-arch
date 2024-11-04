@@ -1,0 +1,6 @@
+version: 1.0.0
+definitions:
+  notifications:
+    SendShipmentWithMarkdownQueued:
+      shouldQueue: true
+      shouldBeMarkdown: true

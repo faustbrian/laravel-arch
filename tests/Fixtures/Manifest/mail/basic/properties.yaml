@@ -1,0 +1,9 @@
+version: 1.0.0
+definitions:
+  mails:
+    OrderShippedWithConstructor:
+      subject: Order Shipped
+      metadata:
+        constructor:
+          properties:
+            key: string

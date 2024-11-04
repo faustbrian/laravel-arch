@@ -1,0 +1,1 @@
+$users = User::where('title', $title)->where('content', $content)->orderBy('published_at')->limit(5)->get();

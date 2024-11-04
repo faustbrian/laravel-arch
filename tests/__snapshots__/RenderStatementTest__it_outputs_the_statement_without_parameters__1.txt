@@ -1,0 +1,1 @@
+return Inertia::render('Dashboard');

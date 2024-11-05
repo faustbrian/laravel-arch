@@ -1,0 +1,4 @@
+    public function {{ relationship }}(): MorphTo
+    {
+        return $this->morphTo('{{ name }}');
+    }

@@ -1,0 +1,17 @@
+version: 1.0.0
+definitions:
+  models:
+    User:
+      columns:
+        id: id
+        name: string
+        email: string unique
+        email_verified_at: timestamp nullable
+        password: string
+        remember_token: rememberToken
+        current_team_id: foreignId nullable
+        profile_photo_path: string:2048 nullable
+        timestamps: timestamps
+
+  factories:
+    - User

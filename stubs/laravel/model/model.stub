@@ -1,0 +1,11 @@
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+{{ imports }}
+
+class {{ class }} extends Model
+{
+    use HasFactory;
+{{ body }}
+}

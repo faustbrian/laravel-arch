@@ -1,0 +1,12 @@
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use {{ namespacedComponent }};
+use Livewire\Livewire;
+
+test('the component can render', function (): void {
+    $component = Livewire::test({{ class }}::class);
+
+    $component->assertStatus(200);
+});

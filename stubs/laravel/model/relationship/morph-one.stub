@@ -1,0 +1,4 @@
+    public function {{ relationship }}(): MorphOne
+    {
+        return $this->morphOne({{ related }}::class, '{{ name }}');
+    }

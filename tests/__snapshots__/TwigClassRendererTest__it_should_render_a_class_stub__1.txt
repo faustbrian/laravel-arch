@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+class Person
+{
+    public function getName(): string
+    {
+        return 'John Doe';
+    }
+
+    public function getAge(): int
+    {
+        return 30;
+    }
+}

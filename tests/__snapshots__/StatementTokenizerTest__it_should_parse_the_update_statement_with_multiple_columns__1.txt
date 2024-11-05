@@ -1,0 +1,1 @@
+$user->update(['title' => $title,'content' => $content,'author_id' => $author_id]);

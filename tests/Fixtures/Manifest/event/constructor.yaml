@@ -1,0 +1,12 @@
+version: 1.0.0
+definitions:
+  events:
+    InvoicePaid:
+      shouldBroadcast: true
+      metadata:
+        constructor:
+          properties:
+            name: string
+            mail:
+              type: string
+              visibility: private

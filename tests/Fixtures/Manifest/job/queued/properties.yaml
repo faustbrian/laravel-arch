@@ -1,0 +1,10 @@
+version: 1.0.0
+definitions:
+  jobs:
+    QueuedWithParameters:
+      shouldQueue: true
+      metadata:
+        constructor:
+          properties:
+            name: string
+            mail: string

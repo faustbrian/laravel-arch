@@ -1,0 +1,3 @@
+test('{{ title }}', function (): void {
+{{ body }}
+});

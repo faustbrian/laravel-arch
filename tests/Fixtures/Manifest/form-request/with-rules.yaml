@@ -1,0 +1,6 @@
+version: 1.0.0
+definitions:
+  formRequests:
+    StoreUser:
+      rules:
+        username: required|string|min:3|max:255

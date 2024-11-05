@@ -1,0 +1,1 @@
+$request->session()->put('user.name', $user->name);

@@ -1,0 +1,1 @@
+Notification::send($user, new InvoicePaid($invoice));

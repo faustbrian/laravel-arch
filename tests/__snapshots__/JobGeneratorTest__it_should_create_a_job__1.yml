@@ -1,0 +1,24 @@
+created:
+    app/Jobs/WithoutParameters.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace App\Jobs;
+
+        use Illuminate\Foundation\Bus\Dispatchable;
+
+        class WithoutParameters
+        {
+            use Dispatchable;
+
+            /**
+             * Execute the job.
+             */
+            public function handle(): void
+            {
+                //
+            }
+        }
+deleted: {  }
+updated: {  }

@@ -1,0 +1,7 @@
+version: 1.0.0
+definitions:
+  controllers:
+    web:
+      Model:
+        resource: true
+        methods: ['index', 'store', 'update']

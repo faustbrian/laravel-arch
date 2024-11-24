@@ -1,0 +1,4 @@
+    public function {{ relationship }}(): HasOne
+    {
+        return $this->hasOne({{ related }}::class);
+    }

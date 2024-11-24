@@ -1,0 +1,8 @@
+version: 1.0.0
+definitions:
+  notifications:
+    SendShipmentWithConstructor:
+      metadata:
+        constructor:
+          properties:
+            key: string

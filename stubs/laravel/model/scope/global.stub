@@ -1,0 +1,3 @@
+        static::addGlobalScope('{{ name }}', function (Builder $builder) {
+            //
+        });

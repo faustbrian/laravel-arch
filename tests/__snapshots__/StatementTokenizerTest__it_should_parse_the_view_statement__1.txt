@@ -1,0 +1,1 @@
+return view('post.show', ['post' => $post, 'foo' => $foo, 'bar' => $bar]);

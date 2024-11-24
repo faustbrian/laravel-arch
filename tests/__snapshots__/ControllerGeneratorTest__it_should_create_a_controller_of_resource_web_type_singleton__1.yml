@@ -1,0 +1,41 @@
+created:
+    app/Http/Controllers/SingletonController.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace App\Http\Controllers;
+
+        use App\Http\Controllers\Controller;
+        use App\Http\Requests\StoreSingletonRequest;
+        use App\Http\Requests\UpdateSingletonRequest;
+
+        class SingletonController extends Controller
+        {
+            /**
+             * Create a new controller instance.
+             */
+            public function __construct()
+            {
+                        $this->authorizeResource(Singleton::class);
+
+            }
+
+            /**
+             * Store the newly created resource in storage.
+             */
+            public function store(StoreSingletonRequest $request): never
+            {
+                abort(404);
+            }
+
+            /**
+             * Update the resource in storage.
+             */
+            public function update(UpdateSingletonRequest $request)
+            {
+                //
+            }
+        }
+deleted: {  }
+updated: {  }

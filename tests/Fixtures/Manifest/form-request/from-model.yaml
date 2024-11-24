@@ -1,0 +1,8 @@
+version: 1.0.0
+definitions:
+  models:
+    Post:
+      columns:
+        title: string:255
+        body: longText
+        publish_at: date nullable

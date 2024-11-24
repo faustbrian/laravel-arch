@@ -1,0 +1,4 @@
+related: related
+foreignKey: foreignKey
+ownerKey: ownerKey
+relation: relation

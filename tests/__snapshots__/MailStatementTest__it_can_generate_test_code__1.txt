@@ -1,0 +1,3 @@
+Mail::fake();
+
+Mail::assertSent(InvoiceMailable::class);

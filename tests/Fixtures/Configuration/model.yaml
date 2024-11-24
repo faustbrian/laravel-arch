@@ -1,0 +1,106 @@
+version: 1.0.0
+definitions:
+  models:
+    Post:
+      columns:
+        user_id: id foreign
+        big_increments: bigIncrements
+        big_integer: bigInteger
+        binary: binary
+        boolean: boolean
+        char: char
+        date_time_tz: dateTimeTz
+        date_time: dateTime
+        date: date
+        decimal: decimal
+        double: double
+        enum: enum
+        float: float
+        foreign_id: foreignId
+        foreign_id_for: foreignIdFor
+        foreign_ulid: foreignUlid
+        foreign_uuid: foreignUuid
+        geometry_collection: geometryCollection
+        geometry: geometry
+        id: id
+        increments: increments
+        integer: integer
+        ip_address: ipAddress
+        json: json
+        jsonb: jsonb
+        line_string: lineString
+        long_text: longText
+        mac_address: macAddress
+        medium_increments: mediumIncrements
+        medium_integer: mediumInteger
+        medium_text: mediumText
+        morphs: morphs
+        multi_line_string: multiLineString
+        multi_point: multiPoint
+        multi_polygon: multiPolygon
+        nullable_morphs: nullableMorphs
+        nullable_timestamps: nullableTimestamps
+        nullable_ulid_morphs: nullableUlidMorphs
+        nullable_uuid_morphs: nullableUuidMorphs
+        point: point
+        polygon: polygon
+        remember_token: rememberToken
+        set: set
+        small_increments: smallIncrements
+        small_integer: smallInteger
+        soft_deletes_tz: softDeletesTz
+        soft_deletes: softDeletes
+        string: string
+        text: text
+        time_tz: timeTz
+        time: time
+        timestamp_tz: timestampTz
+        timestamp: timestamp
+        timestamps_tz: timestampsTz
+        timestamps: timestamps
+        tiny_increments: tinyIncrements
+        tiny_integer: tinyInteger
+        tiny_text: tinyText
+        unsigned_big_integer: unsignedBigInteger
+        unsigned_decimal: unsignedDecimal
+        unsigned_integer: unsignedInteger
+        unsigned_medium_integer: unsignedMediumInteger
+        unsigned_small_integer: unsignedSmallInteger
+        unsigned_tiny_integer: unsignedTinyInteger
+        ulid_morphs: ulidMorphs
+        uuid_morphs: uuidMorphs
+        ulid: ulid
+        uuid: uuid
+        year: year
+    Comment:
+      columns:
+        body: string:140
+      relationships:
+        hasMany:
+          - related: Rating
+        hasManyThrough:
+          - related: Deployment
+            through: Environment
+        hasOneThrough:
+          - related: Owner
+            through: Car
+        belongsToMany:
+          - related: Post
+        hasOne:
+          - related: User
+        belongsTo:
+          - related: Post
+        morphOne:
+          - related: Image
+            name: imageable
+        morphTo:
+          - name: author
+        morphMany:
+          - related: Image
+            name: imageable
+        morphToMany:
+          - related: Tag
+            name: taggable
+        morphedByMany:
+          - related: Tag
+            name: taggable

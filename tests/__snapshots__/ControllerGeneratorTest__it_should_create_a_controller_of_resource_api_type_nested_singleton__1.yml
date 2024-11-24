@@ -1,0 +1,43 @@
+created:
+    app/Http/Controllers/ParentNestedSingletonApiController.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace App\Http\Controllers;
+
+        use App\Http\Controllers\Controller;
+        use App\Http\Requests\StoreNestedSingletonApiRequest;
+        use App\Http\Requests\UpdateNestedSingletonApiRequest;
+        use App\Models\NestedSingletonApi;
+        use App\Models\Parent;
+
+        class ParentNestedSingletonApiController extends Controller
+        {
+            /**
+             * Create a new controller instance.
+             */
+            public function __construct()
+            {
+                        $this->authorizeResource(NestedSingletonApi::class);
+
+            }
+
+            /**
+             * Store the newly created resource in storage.
+             */
+            public function store(StoreNestedSingletonApiRequest $request, Parent $parent): never
+            {
+                abort(404);
+            }
+
+            /**
+             * Update the resource in storage.
+             */
+            public function update(UpdateNestedSingletonApiRequest $request, Parent $parent)
+            {
+                //
+            }
+        }
+deleted: {  }
+updated: {  }

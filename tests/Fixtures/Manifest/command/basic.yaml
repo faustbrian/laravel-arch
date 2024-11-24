@@ -1,0 +1,6 @@
+version: 1.0.0
+definitions:
+  commands:
+    SendEmails:
+      signature: 'mail:send {user}'
+      description: 'Send a marketing email to a user'

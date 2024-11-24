@@ -1,0 +1,51 @@
+created:
+    app/Http/Controllers/ParentNestedController.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace App\Http\Controllers;
+
+        use App\Http\Controllers\Controller;
+        use App\Http\Requests\StoreNestedRequest;
+        use App\Http\Requests\UpdateNestedRequest;
+        use App\Models\Nested;
+        use App\Models\Parent;
+
+        class ParentNestedController extends Controller
+        {
+            /**
+             * Create a new controller instance.
+             */
+            public function __construct()
+            {
+                        $this->authorizeResource(Nested::class);
+
+            }
+
+            /**
+             * Display a listing of the resource.
+             */
+            public function index(Parent $parent)
+            {
+                //
+            }
+
+            /**
+             * Store a newly created resource in storage.
+             */
+            public function store(StoreNestedRequest $request, Parent $parent)
+            {
+                //
+            }
+
+            /**
+             * Update the specified resource in storage.
+             */
+            public function update(UpdateNestedRequest $request, Parent $parent, Nested $nested)
+            {
+                //
+            }
+        }
+deleted: {  }
+updated: {  }

@@ -1,0 +1,1 @@
+return Redirect::route('post.show', ['post' => $post]);

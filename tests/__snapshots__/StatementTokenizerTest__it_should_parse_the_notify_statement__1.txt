@@ -1,0 +1,1 @@
+$post->author->notify(new ReviewPost($post));

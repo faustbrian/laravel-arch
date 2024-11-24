@@ -1,0 +1,1 @@
+        abort_if($request->user()->cant('{{ method }}', {{ abilities }}), 403);

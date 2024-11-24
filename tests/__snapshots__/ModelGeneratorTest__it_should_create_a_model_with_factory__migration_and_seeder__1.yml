@@ -1,0 +1,101 @@
+created:
+    database/factories/UserFactory.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace Database\Factories;
+
+        use Illuminate\Database\Eloquent\Factories\Factory;
+
+        /**
+         * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
+         */
+        class UserFactory extends Factory
+        {
+            /**
+             * Define the model's default state.
+             *
+             * @return array<string, mixed>
+             */
+            public function definition(): array
+            {
+                return [
+                    'name' => fake()->name,
+                    'mail' => fake()->word,
+                ];
+            }
+        }
+    database/migrations/2023_01_01_000000_create_users_table.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        use Illuminate\Database\Migrations\Migration;
+        use Illuminate\Database\Schema\Blueprint;
+        use Illuminate\Support\Facades\Schema;
+
+        return new class() extends Migration
+        {
+            /**
+             * Run the migrations.
+             */
+            public function up(): void
+            {
+                Schema::create('users', function (Blueprint $table): void {
+                    $table->string('name');
+                    $table->string('mail');
+                });
+            }
+
+            /**
+             * Reverse the migrations.
+             */
+            public function down(): void
+            {
+                Schema::dropIfExists('users');
+            }
+        };
+    app/Models/User.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace App\Models;
+
+        use Illuminate\Database\Eloquent\Factories\HasFactory;
+        use Illuminate\Database\Eloquent\Model;
+
+        class User extends Model
+        {
+            use HasFactory;
+
+            /**
+             * The attributes that are mass assignable.
+             *
+             * @var array<string>
+             */
+            protected $fillable = ['name' ,'mail'];
+        }
+    database/seeders/UserSeeder.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace Database\Seeders;
+
+        // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+        use Illuminate\Database\Seeder;
+
+        class UserSeeder extends Seeder
+        {
+            /**
+             * Run the database seeds.
+             */
+            public function run(): void
+            {
+                //
+            }
+        }
+deleted: {  }
+updated: {  }

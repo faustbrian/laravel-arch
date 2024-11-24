@@ -1,0 +1,23 @@
+created:
+    app/Channels/OrderChannel.php: |
+        <?php
+
+        declare(strict_types=1);
+
+        namespace App\Channels;
+
+        use App\Models\User;
+
+        class OrderChannel
+        {
+            
+            /**
+             * Authenticate the user's access to the channel.
+             */
+            public function join(User $user): array|bool
+            {
+                //
+            }
+        }
+deleted: {  }
+updated: {  }

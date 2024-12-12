@@ -7,7 +7,9 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-use BaseCodeOy\Arch\Configuration;
+namespace BaseCodeOy\Arch\Contract;
 
-return Configuration::make()->toArray();
-// TODO: revert src back to 7f24707116f1d3bed33251045ed3acbde3627de1
+interface ExtensionInterface
+{
+    public function register(array $configuration): void;
+}

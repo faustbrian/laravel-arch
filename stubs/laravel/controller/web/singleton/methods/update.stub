@@ -1,0 +1,7 @@
+    /**
+     * Update the resource in storage.
+     */
+    public function update({{ request }} $request)
+    {
+{{ body }}
+    }

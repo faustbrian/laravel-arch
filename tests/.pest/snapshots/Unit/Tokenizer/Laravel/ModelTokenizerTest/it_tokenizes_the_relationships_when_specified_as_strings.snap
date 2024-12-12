@@ -1,0 +1,5 @@
+{
+    "related": "Comment",
+    "foreignKey": null,
+    "localKey": null
+}

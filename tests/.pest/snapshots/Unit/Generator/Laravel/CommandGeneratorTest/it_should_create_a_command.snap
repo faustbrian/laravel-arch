@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Console\/Commands\/SendEmails.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Console\\Commands;\n\nuse Illuminate\\Console\\Command;\n\nclass SendEmails extends Command\n{\n    \/**\n     * The name and signature of the console command.\n     *\n     * @var string\n     *\/\n    protected $signature = 'mail:send {user}';\n\n    \/**\n     * The console command description.\n     *\n     * @var string\n     *\/\n    protected $description = 'Send a marketing email to a user';\n\n    \/**\n     * Execute the console command.\n     *\/\n    public function handle(): void\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

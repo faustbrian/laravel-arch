@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Http\/Resources\/UserCollection.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Http\\Resources;\n\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Http\\Resources\\Json\\ResourceCollection;\n\nclass UserCollection extends ResourceCollection\n{\n    \/**\n     * Transform the resource collection into an array.\n     *\n     * @return array<int|string, mixed>\n     *\/\n    public function toArray(Request $request): array\n    {\n        return parent::toArray($request);\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

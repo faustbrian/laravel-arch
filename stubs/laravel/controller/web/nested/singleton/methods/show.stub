@@ -1,7 +1,0 @@
-    /**
-     * Display the resource.
-     */
-    public function show({{ parentModel }} ${{ parentModelVariable }})
-    {
-{{ body }}
-    }

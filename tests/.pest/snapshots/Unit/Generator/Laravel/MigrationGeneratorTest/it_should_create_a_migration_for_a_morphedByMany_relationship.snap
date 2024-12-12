@@ -1,0 +1,7 @@
+{
+    "created": {
+        "database\/migrations\/2023_01_01_000000_create_tagables_table.php": "<?php\n\ndeclare(strict_types=1);\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nreturn new class() extends Migration\n{\n    \/**\n     * Run the migrations.\n     *\/\n    public function up(): void\n    {\n        Schema::create('tagables', function (Blueprint $table): void {\n            $table->unsignedBigInteger('tag_id');\n            $table->morphs('tagable');\n        });\n    }\n\n    \/**\n     * Reverse the migrations.\n     *\/\n    public function down(): void\n    {\n        Schema::dropIfExists('tagables');\n    }\n};\n"
+    },
+    "deleted": [],
+    "updated": []
+}

@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Models\/TeamMember.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Relations\\Pivot;\n\nclass TeamMember extends Pivot\n{\n    \/\/\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

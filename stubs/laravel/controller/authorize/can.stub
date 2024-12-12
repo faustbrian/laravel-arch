@@ -1,1 +1,0 @@
-        abort_unless($request->user()->can('{{ method }}', {{ abilities }}), 403);

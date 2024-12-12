@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Providers\/EloquentServiceProvider.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Providers;\n\nuse Illuminate\\Support\\ServiceProvider;\n\nclass EloquentServiceProvider extends ServiceProvider\n{\n    \/**\n     * Register services.\n     *\/\n    public function register(): void\n    {\n        \/\/\n    }\n\n    \/**\n     * Bootstrap services.\n     *\/\n    public function boot(): void\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

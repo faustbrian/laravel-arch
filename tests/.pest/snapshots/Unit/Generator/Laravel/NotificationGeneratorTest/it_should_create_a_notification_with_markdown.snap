@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Notifications\/SendShipmentWithMarkdown.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Notifications;\n\nuse Illuminate\\Notifications\\Messages\\MailMessage;\nuse Illuminate\\Notifications\\Notification;\n\nclass SendShipmentWithMarkdown extends Notification\n{\n\n    \/**\n     * Get the notification's delivery channels.\n     *\n     * @return array<int, string>\n     *\/\n    public function via(object $notifiable): array\n    {\n        return ['mail'];\n    }\n\n    \/**\n     * Get the mail representation of the notification.\n     *\/\n    public function toMail(object $notifiable): MailMessage\n    {\n        return (new MailMessage())->markdown('');\n    }\n\n    \/**\n     * Get the array representation of the notification.\n     *\n     * @return array<string, mixed>\n     *\/\n    public function toArray(object $notifiable): array\n    {\n        return [\n            \/\/\n        ];\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

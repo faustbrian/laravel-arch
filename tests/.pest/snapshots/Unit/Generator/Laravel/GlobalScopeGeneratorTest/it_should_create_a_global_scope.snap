@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Models\/Scopes\/AncientScope.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Models\\Scopes;\n\nuse Illuminate\\Database\\Eloquent\\Builder;\nuse Illuminate\\Database\\Eloquent\\Model;\nuse Illuminate\\Database\\Eloquent\\Scope;\n\nclass AncientScope implements Scope\n{\n    \/**\n     * Apply the scope to a given Eloquent query builder.\n     *\/\n    public function apply(Builder $builder, Model $model): void\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

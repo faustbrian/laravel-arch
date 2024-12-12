@@ -1,7 +1,0 @@
-    /**
-     * Show the form for editing the resource.
-     */
-    public function edit({{ parentModel }} ${{ parentModelVariable }})
-    {
-{{ body }}
-    }

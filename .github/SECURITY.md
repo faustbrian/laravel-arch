@@ -2,8 +2,16 @@
 
 ## Supported Versions
 
-After each new major release, the previous release will be supported for no less than 12 months, unless explictly stated otherwise. This may mean that there are multiple supported versions at any given time.
+The following versions of `basecodeoy/xit` have active support:
+
+- `^1.0.0`
+
+## Unsupported Versions
+
+The following versions of `basecodeoy/xit` have reached their end of life:
+
+- `<1.0.0`
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability within this package, please send an email to [hello@basecode.sh](mailto:hello@basecode.sh). All security vulnerabilities will be promptly addressed. Please do not disclose security-related issues publicly until a fix has been announced.
+If you believe that you have found a security vulnerability, please send an email to `hello@basecode.sh`. Ensure to include all details required to understand the severity of the issue.

@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Http\/Controllers\/StatementController.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Http\\Controllers;\n\nuse App\\Http\\Controllers\\Controller;\nuse App\\Http\\Requests\\StoreStatementRequest;\nuse App\\Models\\Statement;\nuse Illuminate\\Support\\Facades\\Redirect;\nuse Illuminate\\Support\\Facades\\View;\n\nclass StatementController extends Controller\n{\n    \/**\n     * Create a new controller instance.\n     *\/\n    public function __construct()\n    {\n                $this->authorizeResource(Statement::class);\n\n    }\n\n    \/**\n     * Display a listing of the resource.\n     *\/\n    public function index()\n    {\n        return view('post.index', ['posts' => $posts]);\n    }\n\n    \/**\n     * Show the form for creating a new resource.\n     *\/\n    public function create()\n    {\n        return view('post.create');\n    }\n\n    \/**\n     * Store a newly created resource in storage.\n     *\/\n    public function store(StoreStatementRequest $request)\n    {\n        return Redirect::route('post.index');\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

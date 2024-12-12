@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Castables\/Address.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Castables;\n\nuse Illuminate\\Contracts\\Database\\Eloquent\\Castable;\nuse Illuminate\\Contracts\\Database\\Eloquent\\CastsAttributes;\nuse InvalidArgumentException;\n\nclass Address implements Castable\n{\n    \/**\n     * Get the caster class to use when casting from \/ to this cast target.\n     *\n     * @param  array  $arguments\n     * @return mixed\n     *\/\n    public static function castUsing(array $arguments): CastsAttributes\n    {\n        return new class implements CastsAttributes\n        {\n            public function get(Model $model, string $key, mixed $value, array $attributes): Address\n            {\n                return new Address($attributes);\n            }\n\n            public function set(Model $model, string $key, mixed $value, array $attributes): array\n            {\n                return $value->toArray();\n            }\n        };\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

@@ -22,11 +22,11 @@ it('can create an instance', function (): void {
 });
 
 it('can create an instance from a string', function (): void {
-    $subject = HasMany::fromString('related foreignKey localKey');
+    $hasMany = HasMany::fromString('related foreignKey localKey');
 
-    expect($subject->related())->toBe('related');
-    expect($subject->foreignKey())->toBe('foreignKey');
-    expect($subject->localKey())->toBe('localKey');
+    expect($hasMany->related())->toBe('related');
+    expect($hasMany->foreignKey())->toBe('foreignKey');
+    expect($hasMany->localKey())->toBe('localKey');
 });
 
 it('can return an array representation', function (): void {

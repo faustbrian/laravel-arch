@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Mail\/OrderShippedWithConstructor.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Mail;\n\nuse Illuminate\\Mail\\Mailable;\nuse Illuminate\\Mail\\Mailables\\Content;\nuse Illuminate\\Mail\\Mailables\\Envelope;\nuse Illuminate\\Queue\\SerializesModels;\n\nclass OrderShippedWithConstructor extends Mailable\n{\n    use SerializesModels;\n    \/**\n     * Create a new mail instance.\n     *\/\n    public function __construct()\n    {\n        \n    }\n\n    \/**\n     * Get the message envelope.\n     *\/\n    public function envelope(): Envelope\n    {\n        return new Envelope(\n            subject: 'Order Shipped',\n        );\n    }\n\n    \/**\n     * Get the message content definition.\n     *\/\n    public function content(): Content\n    {\n        return new Content(\n            view: 'mail.order-shipped-with-constructor',\n        );\n    }\n\n    \/**\n     * Get the attachments for the message.\n     *\n     * @return array<int, \\Illuminate\\Mail\\Mailables\\Attachment>\n     *\/\n    public function attachments(): array\n    {\n        return [];\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

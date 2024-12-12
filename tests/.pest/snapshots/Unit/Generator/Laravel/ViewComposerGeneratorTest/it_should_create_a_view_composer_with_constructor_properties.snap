@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/View\/Composers\/ProfileComposer.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\View\\Composers;\n\nuse Illuminate\\View\\View;\n\nclass ProfileComposer\n{\n    \/**\n     * Create a new view composer instance.\n     *\/\n    public function __construct()\n    {\n        \n    }\n\n    \/**\n     * Bind data to the view.\n     *\/\n    public function compose(View $view): void\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

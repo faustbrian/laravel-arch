@@ -1,0 +1,10 @@
+{
+    "created": {
+        "database\/factories\/UserFactory.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace Database\\Factories;\n\nuse Illuminate\\Database\\Eloquent\\Factories\\Factory;\n\n\/**\n * @extends \\Illuminate\\Database\\Eloquent\\Factories\\Factory<\\App\\Models\\User>\n *\/\nclass UserFactory extends Factory\n{\n    \/**\n     * Define the model's default state.\n     *\n     * @return array<string, mixed>\n     *\/\n    public function definition(): array\n    {\n        return [\n            'name' => fake()->name,\n            'mail' => fake()->word,\n        ];\n    }\n}\n",
+        "database\/migrations\/2023_01_01_000000_create_users_table.php": "<?php\n\ndeclare(strict_types=1);\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nreturn new class() extends Migration\n{\n    \/**\n     * Run the migrations.\n     *\/\n    public function up(): void\n    {\n        Schema::create('users', function (Blueprint $table): void {\n            $table->string('name');\n            $table->string('mail');\n        });\n    }\n\n    \/**\n     * Reverse the migrations.\n     *\/\n    public function down(): void\n    {\n        Schema::dropIfExists('users');\n    }\n};\n",
+        "app\/Models\/User.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Factories\\HasFactory;\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass User extends Model\n{\n    use HasFactory;\n\n    \/**\n     * The attributes that are mass assignable.\n     *\n     * @var array<string>\n     *\/\n    protected $fillable = ['name' ,'mail'];\n}\n",
+        "database\/seeders\/UserSeeder.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace Database\\Seeders;\n\n\/\/ use Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents;\nuse Illuminate\\Database\\Seeder;\n\nclass UserSeeder extends Seeder\n{\n    \/**\n     * Run the database seeds.\n     *\/\n    public function run(): void\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

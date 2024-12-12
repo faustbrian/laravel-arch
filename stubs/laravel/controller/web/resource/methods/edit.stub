@@ -1,7 +1,0 @@
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit({{ model }} ${{ modelVariable }})
-    {
-{{ body }}
-    }

@@ -1,6 +1,0 @@
-    /**
-     * The attributes that should be visible in serialization.
-     *
-     * @var array<string>
-     */
-    protected $visible = [];

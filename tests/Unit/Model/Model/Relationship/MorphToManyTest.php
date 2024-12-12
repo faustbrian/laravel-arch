@@ -34,17 +34,17 @@ it('can create an instance', function (): void {
 });
 
 it('can create an instance from a string', function (): void {
-    $subject = MorphToMany::fromString('related name table foreignPivotKey relatedPivotKey parentKey relatedKey relation true');
+    $morphToMany = MorphToMany::fromString('related name table foreignPivotKey relatedPivotKey parentKey relatedKey relation true');
 
-    expect($subject->related())->toBe('related');
-    expect($subject->name())->toBe('name');
-    expect($subject->table())->toBe('table');
-    expect($subject->foreignPivotKey())->toBe('foreignPivotKey');
-    expect($subject->relatedPivotKey())->toBe('relatedPivotKey');
-    expect($subject->parentKey())->toBe('parentKey');
-    expect($subject->relatedKey())->toBe('relatedKey');
-    expect($subject->relation())->toBe('relation');
-    expect($subject->inverse())->toBeTrue();
+    expect($morphToMany->related())->toBe('related');
+    expect($morphToMany->name())->toBe('name');
+    expect($morphToMany->table())->toBe('table');
+    expect($morphToMany->foreignPivotKey())->toBe('foreignPivotKey');
+    expect($morphToMany->relatedPivotKey())->toBe('relatedPivotKey');
+    expect($morphToMany->parentKey())->toBe('parentKey');
+    expect($morphToMany->relatedKey())->toBe('relatedKey');
+    expect($morphToMany->relation())->toBe('relation');
+    expect($morphToMany->inverse())->toBeTrue();
 });
 
 it('can return an array representation', function (): void {

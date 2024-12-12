@@ -1,51 +1,127 @@
 # Contributing
 
-Contributions are **welcome** and will be fully **credited**. Please review these guidelines before continuing.
+We use [GitHub Actions](https://github.com/features/actions) as a continuous integration system.
 
-## Etiquette
+For details, take a look at the following workflow configuration files:
 
-This project is open source, and as such, the maintainers give their free time to build and maintain the source code
-held within. They make the code freely available in the hope that it will be of use to other developers. It would be
-extremely unfair for them to suffer abuse or anger for their hard work.
+- [`workflows/integrate.yaml`](workflows/integrate.yaml)
+- [`workflows/merge.yaml`](workflows/merge.yaml)
+- [`workflows/release.yaml`](workflows/release.yaml)
+- [`workflows/renew.yaml`](workflows/renew.yaml)
+- [`workflows/triage.yaml`](workflows/triage.yaml)
 
-Please be considerate towards maintainers when raising issues or presenting pull requests. Let's show the
-world that developers are civilized and selfless people.
+## Coding Standards
 
-It's the duty of the maintainer to ensure that all submissions to the project are of sufficient
-quality to benefit the project. Many developers have different skillsets, strengths, and weaknesses. Respect the maintainer's decision, and do not be upset or abusive if your submission is not used.
+We use [`ergebnis/composer-normalize`](https://github.com/ergebnis/composer-normalize) to normalize `composer.json`.
 
-## Viability
+We use [`yamllint`](https://github.com/adrienverge/yamllint) to enforce coding standards in YAML files.
 
-When requesting or submitting new features, first consider whether it might be useful to others. Open
-source projects are used by many developers, who may have entirely different needs to your own. Think about
-whether or not your feature is likely to be used by other users of the project.
+If you do not have `yamllint` installed yet, run
 
-## Guidelines
-
-* Please follow the [Coding Style Guide](https://github.com/basecodeoy/php-cs-fixer-config/blob/main/src/Presets/Standard.php).
-* Ensure that the current tests pass, and if you've added something new, add the tests where relevant.
-* Send a coherent commit history, making sure each commit in your pull request is meaningful.
-* You may need to [rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) to avoid merge conflicts.
-* If you are changing or adding to the behaviour or public API, you may need to update the docs.
-* Please remember that we follow [Semantic Versioning](https://semver.org/).
-
-## Running Tests
-
-First, install the dependencies using [Composer](https://getcomposer.org/):
-
-```bash
-$ composer install
+```sh
+brew install yamllint
 ```
 
-Then run [Pest](https://pestphp.com/):
+to install `yamllint`.
 
-```bash
-$ composer test
+We use [`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer) to enforce coding standards in PHP files.
+
+Run
+
+```sh
+make coding-standards
 ```
 
-* The tests will be automatically run by [GitHub Actions](https://github.com/features/actions) against pull requests.
+to automatically fix coding standard violations.
 
-## Credits
+## Dependency Analysis
 
-- [Brian Faust](https://github.com/faustbrian)
-- [All Contributors](../../../contributors)
+We use [`maglnet/composer-require-checker`](https://github.com/maglnet/ComposerRequireChecker) to prevent the use of unknown symbols in production code.
+
+Run
+
+```sh
+make dependency-analysis
+```
+
+to run a dependency analysis.
+
+## Refactoring
+
+We use [`rector/rector`](https://github.com/rectorphp/rector) to automatically refactor code.
+
+Run
+
+```sh
+make refactoring
+```
+
+to automatically refactor code.
+
+## Security Analysis
+
+We use [`composer`](https://github.com/composer/composer) to run a security analysis.
+
+Run
+
+```sh
+make security-analysis
+```
+
+to run a security analysis.
+
+## Static Code Analysis
+
+We use [`phpstan/phpstan`](https://github.com/phpstan/phpstan) to statically analyze the code.
+
+Run
+
+```sh
+make static-code-analysis
+```
+
+to run a static code analysis.
+
+We also use the baseline feature of [`phpstan/phpstan`](https://phpstan.org/user-guide/baseline).
+
+Run
+
+```sh
+make static-code-analysis-baseline
+```
+
+to regenerate the baseline in [`../phpstan-baseline.neon`](../phpstan-baseline.neon).
+
+:exclamation: Ideally, the baseline should shrink over time.
+
+## Tests
+
+We use [`pestphp/pest`](https://github.com/pestphp/pest) to drive the development.
+
+Run
+
+```sh
+make tests
+```
+
+to run all the tests.
+
+## Extra lazy?
+
+Run
+
+```sh
+make
+```
+
+to automatically refactor code, enforce coding standards, run a static code analysis, and run tests!
+
+## Help
+
+:bulb: Run
+
+```sh
+make help
+```
+
+to display a list of available targets with corresponding descriptions.

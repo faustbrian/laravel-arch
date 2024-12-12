@@ -1,0 +1,7 @@
+{
+    "created": {
+        "tests\/Unit\/Models\/UserTest.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace Tests\\Unit\\Models;\n\nuse App\\Models\\User;\nuse Illuminate\\Database\\Eloquent\\Model;\n\nit('should extend the eloquent model', function (): void {\n    $model = new User();\n\n    expect($model)->toBeInstanceOf(Model::class);\n});\n"
+    },
+    "deleted": [],
+    "updated": []
+}

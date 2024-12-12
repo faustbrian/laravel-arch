@@ -1,3 +1,0 @@
-Queue::fake();
-
-Queue::assertPushed({{ class }}::class);

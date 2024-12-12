@@ -1,0 +1,7 @@
+{
+    "created": {
+        "database\/factories\/MorphsFactory.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace Database\\Factories;\n\nuse Illuminate\\Database\\Eloquent\\Factories\\Factory;\n\n\/**\n * @extends \\Illuminate\\Database\\Eloquent\\Factories\\Factory<\\App\\Models\\Morphs>\n *\/\nclass MorphsFactory extends Factory\n{\n    \/**\n     * Define the model's default state.\n     *\n     * @return array<string, mixed>\n     *\/\n    public function definition(): array\n    {\n        return [\n            'team_id' => Team::factory(),\n            'team_type' => Team::class,\n        ];\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

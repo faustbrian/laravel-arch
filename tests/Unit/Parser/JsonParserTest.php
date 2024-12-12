@@ -13,9 +13,9 @@ use BaseCodeOy\Arch\Model\Manifest;
 use BaseCodeOy\Arch\Parser\JsonParser;
 
 it('should parse a JSON file', function (): void {
-    $result = (new JsonParser())->parse(__DIR__.'/fixtures/manifest.json');
+    $manifest = (new JsonParser())->parse(__DIR__.'/fixtures/manifest.json');
 
-    expect($result)->toBeInstanceOf(Manifest::class);
-    expect($result->arch())->toBeString();
-    expect($result->definitions())->toBeArray();
+    expect($manifest)->toBeInstanceOf(Manifest::class);
+    expect($manifest->arch())->toBeString();
+    expect($manifest->definitions())->toBeArray();
 });

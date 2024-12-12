@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Http\/Livewire\/Search.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Http\\Livewire;\n\nuse Illuminate\\Contracts\\View\\View;\nuse Livewire\\Component;\n\nclass Search extends Component\n{\n    public function render(): View\n    {\n        return view('livewire.search');\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

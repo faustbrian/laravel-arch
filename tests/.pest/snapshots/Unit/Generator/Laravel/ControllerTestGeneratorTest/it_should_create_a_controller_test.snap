@@ -1,0 +1,7 @@
+{
+    "created": {
+        "tests\/Feature\/Http\/Controllers\/UserControllerTest.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace Tests\\Feature\\Http\\Controllers;\n\ntest('index', function (): void {\n        \/\/\n});\n\ntest('store', function (): void {\n        \/\/\n});\n\ntest('update', function (): void {\n        \/\/\n});\n"
+    },
+    "deleted": [],
+    "updated": []
+}

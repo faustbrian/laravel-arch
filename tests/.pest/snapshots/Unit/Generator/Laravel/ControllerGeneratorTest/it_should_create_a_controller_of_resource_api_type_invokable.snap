@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Http\/Controllers\/InvokableApiController.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Http\\Controllers;\n\nuse App\\Http\\Controllers\\Controller;\n\nclass InvokableApiController extends Controller\n{\n    \/**\n     * Handle the incoming request.\n     *\/\n    public function __invoke(Request $request)\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

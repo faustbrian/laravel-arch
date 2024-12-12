@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Nova\/Filters\/UserType.php": "<?php\n\nnamespace App\\Nova\\Filters;\n\nuse Laravel\\Nova\\Filters\\BooleanFilter;\nuse Laravel\\Nova\\Http\\Requests\\NovaRequest;\n\nclass UserType extends BooleanFilter\n{\n    \/**\n     * Apply the filter to the given query.\n     *\n     * @param  \\Laravel\\Nova\\Http\\Requests\\NovaRequest  $request\n     * @param  \\Illuminate\\Database\\Eloquent\\Builder  $query\n     * @param  mixed  $value\n     * @return \\Illuminate\\Database\\Eloquent\\Builder\n     *\/\n    public function apply(NovaRequest $request, $query, $value)\n    {\n        return $query;\n    }\n\n    \/**\n     * Get the filter's available options.\n     *\n     * @param  \\Laravel\\Nova\\Http\\Requests\\NovaRequest  $request\n     * @return array\n     *\/\n    public function options(NovaRequest $request)\n    {\n        return [];\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

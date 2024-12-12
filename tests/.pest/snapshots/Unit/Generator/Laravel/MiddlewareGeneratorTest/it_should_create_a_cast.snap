@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Http\/Middleware\/EnsureTokenIsValid.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Http\\Middleware;\n\nuse Closure;\nuse Illuminate\\Http\\Request;\nuse Symfony\\Component\\HttpFoundation\\Response;\n\nclass EnsureTokenIsValid\n{\n    \/**\n     * Handle an incoming request.\n     *\n     * @param Closure(Request): (Response) $next\n     *\/\n    public function handle(Request $request, Closure $next): Response\n    {\n        return $next($request);\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

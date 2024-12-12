@@ -30,15 +30,15 @@ it('can create an instance', function (): void {
 });
 
 it('can create an instance from a string', function (): void {
-    $subject = BelongsToMany::fromString('related table foreignPivotKey relatedPivotKey parentKey relatedKey relation');
+    $belongsToMany = BelongsToMany::fromString('related table foreignPivotKey relatedPivotKey parentKey relatedKey relation');
 
-    expect($subject->related())->toBe('related');
-    expect($subject->table())->toBe('table');
-    expect($subject->foreignPivotKey())->toBe('foreignPivotKey');
-    expect($subject->relatedPivotKey())->toBe('relatedPivotKey');
-    expect($subject->parentKey())->toBe('parentKey');
-    expect($subject->relatedKey())->toBe('relatedKey');
-    expect($subject->relation())->toBe('relation');
+    expect($belongsToMany->related())->toBe('related');
+    expect($belongsToMany->table())->toBe('table');
+    expect($belongsToMany->foreignPivotKey())->toBe('foreignPivotKey');
+    expect($belongsToMany->relatedPivotKey())->toBe('relatedPivotKey');
+    expect($belongsToMany->parentKey())->toBe('parentKey');
+    expect($belongsToMany->relatedKey())->toBe('relatedKey');
+    expect($belongsToMany->relation())->toBe('relation');
 });
 
 it('can return an array representation', function (): void {

@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Jobs\/WithParameters.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Jobs;\n\nuse Illuminate\\Foundation\\Bus\\Dispatchable;\n\nclass WithParameters\n{\n    use Dispatchable;\n    \/**\n     * Create a new job instance.\n     *\/\n    public function __construct()\n    {\n        \n    }\n\n    \/**\n     * Execute the job.\n     *\/\n    public function handle(): void\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

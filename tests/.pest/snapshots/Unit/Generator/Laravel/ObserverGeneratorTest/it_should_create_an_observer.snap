@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Observers\/UserObserver.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Observers;\n\nuse App\\Models\\User;\n\nclass UserObserver\n{\n    \/**\n     * Handle the User \"created\" event.\n     *\/\n    public function created(User $user): void\n    {\n        \/\/\n    }\n\n    \/**\n     * Handle the User \"updated\" event.\n     *\/\n    public function updated(User $user): void\n    {\n        \/\/\n    }\n\n    \/**\n     * Handle the User \"deleted\" event.\n     *\/\n    public function deleted(User $user): void\n    {\n        \/\/\n    }\n\n    \/**\n     * Handle the User \"restored\" event.\n     *\/\n    public function restored(User $user): void\n    {\n        \/\/\n    }\n\n    \/**\n     * Handle the User \"force deleted\" event.\n     *\/\n    public function forceDeleted(User $user): void\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

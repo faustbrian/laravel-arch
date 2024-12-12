@@ -1,7 +1,0 @@
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update({{ request }} $request, {{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }})
-    {
-{{ body }}
-    }

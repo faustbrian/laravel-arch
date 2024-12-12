@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Events\/OrderShipped.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Events;\n\nuse Illuminate\\Foundation\\Events\\Dispatchable;\nuse Illuminate\\Queue\\SerializesModels;\n\nclass OrderShipped\n{\n    use Dispatchable;\n    use SerializesModels;\n\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

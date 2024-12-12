@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Jobs\/QueuedWithoutParameters.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Jobs;\n\nuse Illuminate\\Bus\\Queueable;\n\/\/ use Illuminate\\Contracts\\Queue\\ShouldBeUnique;\nuse Illuminate\\Contracts\\Queue\\ShouldQueue;\nuse Illuminate\\Foundation\\Bus\\Dispatchable;\nuse Illuminate\\Queue\\InteractsWithQueue;\nuse Illuminate\\Queue\\SerializesModels;\n\nclass QueuedWithoutParameters implements ShouldQueue\n{\n    use Dispatchable;\n    use InteractsWithQueue;\n    use Queueable;\n    use SerializesModels;\n\n    \/**\n     * Execute the job.\n     *\/\n    public function handle(): void\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

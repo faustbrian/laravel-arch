@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Channels\/OrderChannel.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Channels;\n\nuse App\\Models\\User;\n\nclass OrderChannel\n{\n    \n    \/**\n     * Authenticate the user's access to the channel.\n     *\/\n    public function join(User $user): array|bool\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

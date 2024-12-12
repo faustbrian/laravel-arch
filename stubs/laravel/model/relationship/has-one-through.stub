@@ -1,4 +1,0 @@
-    public function {{ relationship }}(): HasOneThrough
-    {
-        return $this->hasOneThrough({{ related }}::class, {{ through }}::class);
-    }

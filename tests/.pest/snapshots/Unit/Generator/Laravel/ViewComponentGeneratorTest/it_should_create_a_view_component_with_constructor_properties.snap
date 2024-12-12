@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/View\/Components\/Notification.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\View\\Components;\n\nuse Closure;\nuse Illuminate\\Contracts\\View\\View;\nuse Illuminate\\View\\Component;\n\nclass Notification extends Component\n{\n    \/**\n     * Create a new view component instance.\n     *\/\n    public function __construct()\n    {\n        \n    }\n\n    \/**\n     * Get the view \/ contents that represent the component.\n     *\/\n    public function render(): View|Closure|string\n    {\n        return view('components.notification');\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

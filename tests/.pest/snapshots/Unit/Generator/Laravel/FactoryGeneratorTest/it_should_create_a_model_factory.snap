@@ -1,0 +1,7 @@
+{
+    "created": {
+        "database\/factories\/UserFactory.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace Database\\Factories;\n\nuse Illuminate\\Database\\Eloquent\\Factories\\Factory;\nuse Illuminate\\Support\\Str;\n\n\/**\n * @extends \\Illuminate\\Database\\Eloquent\\Factories\\Factory<\\App\\Models\\User>\n *\/\nclass UserFactory extends Factory\n{\n    \/**\n     * Define the model's default state.\n     *\n     * @return array<string, mixed>\n     *\/\n    public function definition(): array\n    {\n        return [\n            'name' => fake()->name,\n            'email' => fake()->safeEmail,\n            'email_verified_at' => fake()->dateTime(),\n            'password' => fake()->password,\n            'remember_token' => Str::random(10),\n            'current_team_id' => fake()->word,\n            'profile_photo_path' => fake()->regexify('[A-Za-z0-9]{2048}'),\n        ];\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

@@ -15,7 +15,7 @@ use Symfony\Component\Yaml\Yaml;
 beforeEach(fn () => registerExtensions());
 
 it('should parse the authorization statement', function (string $handler, string $method): void {
-    $actual = (new StatementTokenizer())->tokenize(Yaml::parse("- {$handler}: true"));
+    $actual = (new StatementTokenizer())->tokenize(Yaml::parse(\sprintf('- %s: true', $handler)));
 
     expect($actual[0]->code(['method' => $method, 'model' => 'User']))->toMatchSnapshot();
 })->with([

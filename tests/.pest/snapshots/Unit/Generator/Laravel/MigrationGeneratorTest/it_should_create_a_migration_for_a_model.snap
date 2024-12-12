@@ -1,0 +1,7 @@
+{
+    "created": {
+        "database\/migrations\/2023_01_01_000000_create_users_table.php": "<?php\n\ndeclare(strict_types=1);\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nreturn new class() extends Migration\n{\n    \/**\n     * Run the migrations.\n     *\/\n    public function up(): void\n    {\n        Schema::create('users', function (Blueprint $table): void {\n            $table->id();\n            $table->string('name');\n            $table->string('email')->unique();\n            $table->timestamp('email_verified_at')->nullable();\n            $table->string('password');\n            $table->rememberToken();\n            $table->foreignId('current_team_id')->nullable();\n            $table->string('profile_photo_path', 2048)->nullable();\n            $table->timestamps();\n        });\n    }\n\n    \/**\n     * Reverse the migrations.\n     *\/\n    public function down(): void\n    {\n        Schema::dropIfExists('users');\n    }\n};\n"
+    },
+    "deleted": [],
+    "updated": []
+}

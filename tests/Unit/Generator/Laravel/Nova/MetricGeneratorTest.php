@@ -17,7 +17,7 @@ it('should create a nova metric', function (string $metric): void {
         'app/Nova/Metrics/'.Str::studly($metric).'.php',
     ]);
 
-    assertMatchesGeneratorSnapshot(MetricGenerator::class, "nova/metric/{$metric}");
+    assertMatchesGeneratorSnapshot(MetricGenerator::class, 'nova/metric/'.$metric);
 })->with([
     'partition',
     'progress',

@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Nova\/Metrics\/Partition.php": "<?php\n\nnamespace App\\Nova\\Metrics;\n\nuse Laravel\\Nova\\Http\\Requests\\NovaRequest;\nuse Laravel\\Nova\\Metrics\\Partition;\n\nclass Partition extends Partition\n{\n    \/**\n     * Calculate the value of the metric.\n     *\n     * @param  \\Laravel\\Nova\\Http\\Requests\\NovaRequest  $request\n     * @return mixed\n     *\/\n    public function calculate(NovaRequest $request)\n    {\n        return $this->count($request, Model::class, 'groupByColumn');\n    }\n\n    \/**\n     * Determine the amount of time the results of the metric should be cached.\n     *\n     * @return \\DateTimeInterface|\\DateInterval|float|int|null\n     *\/\n    public function cacheFor()\n    {\n        \/\/ return now()->addMinutes(5);\n    }\n\n    \/**\n     * Get the URI key for the metric.\n     *\n     * @return string\n     *\/\n    public function uriKey()\n    {\n        return 'uri-key';\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

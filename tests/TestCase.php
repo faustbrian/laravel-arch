@@ -9,7 +9,7 @@
 
 namespace Tests;
 
-use BaseCodeOy\PackagePowerPack\TestBench\AbstractPackageTestCase;
+use BaseCodeOy\Crate\TestBench\AbstractPackageTestCase;
 use Livewire\LivewireServiceProvider;
 use Spatie\LaravelData\LaravelDataServiceProvider;
 
@@ -18,6 +18,7 @@ use Spatie\LaravelData\LaravelDataServiceProvider;
  */
 abstract class TestCase extends AbstractPackageTestCase
 {
+    #[\Override()]
     protected function getRequiredServiceProviders(): array
     {
         return [
@@ -26,6 +27,7 @@ abstract class TestCase extends AbstractPackageTestCase
         ];
     }
 
+    #[\Override()]
     protected function getServiceProviderClass(): string
     {
         return \BaseCodeOy\Arch\ServiceProvider::class;

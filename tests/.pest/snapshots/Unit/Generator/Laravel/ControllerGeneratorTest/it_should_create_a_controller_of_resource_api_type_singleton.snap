@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Http\/Controllers\/SingletonApiController.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Http\\Controllers;\n\nuse App\\Http\\Controllers\\Controller;\nuse App\\Http\\Requests\\StoreSingletonApiRequest;\nuse App\\Http\\Requests\\UpdateSingletonApiRequest;\nuse App\\Models\\SingletonApi;\n\nclass SingletonApiController extends Controller\n{\n    \/**\n     * Create a new controller instance.\n     *\/\n    public function __construct()\n    {\n                $this->authorizeResource(SingletonApi::class);\n\n    }\n\n    \/**\n     * Store the newly created resource in storage.\n     *\/\n    public function store(StoreSingletonApiRequest $request): never\n    {\n        abort(404);\n    }\n\n    \/**\n     * Update the resource in storage.\n     *\/\n    public function update(UpdateSingletonApiRequest $request)\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

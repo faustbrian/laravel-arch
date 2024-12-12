@@ -1,0 +1,8 @@
+{
+    "related": "related",
+    "through": "through",
+    "firstKey": "firstKey",
+    "secondKey": "secondKey",
+    "localKey": "localKey",
+    "secondLocalKey": "secondLocalKey"
+}

@@ -1,0 +1,7 @@
+{
+    "created": {
+        "tests\/Feature\/Http\/Livewire\/SearchTest.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace Tests\\Feature\\Http\\Livewire;\n\nuse App\\Http\\Livewire\\Search;\nuse Livewire\\Livewire;\n\ntest('the component can render', function (): void {\n    $component = Livewire::test(Search::class);\n\n    $component->assertStatus(200);\n});\n"
+    },
+    "deleted": [],
+    "updated": []
+}

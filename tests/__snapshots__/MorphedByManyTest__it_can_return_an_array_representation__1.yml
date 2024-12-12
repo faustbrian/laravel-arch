@@ -1,8 +1,0 @@
-related: related
-name: name
-table: table
-foreignPivotKey: foreignPivotKey
-relatedPivotKey: relatedPivotKey
-parentKey: parentKey
-relatedKey: relatedKey
-relation: relation

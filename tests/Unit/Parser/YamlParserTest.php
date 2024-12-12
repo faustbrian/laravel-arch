@@ -13,9 +13,9 @@ use BaseCodeOy\Arch\Model\Manifest;
 use BaseCodeOy\Arch\Parser\YamlParser;
 
 it('should parse a YAML file', function (): void {
-    $result = (new YamlParser())->parse(__DIR__.'/fixtures/manifest.yaml');
+    $manifest = (new YamlParser())->parse(__DIR__.'/fixtures/manifest.yaml');
 
-    expect($result)->toBeInstanceOf(Manifest::class);
-    expect($result->arch())->toBeString();
-    expect($result->definitions())->toBeArray();
+    expect($manifest)->toBeInstanceOf(Manifest::class);
+    expect($manifest->arch())->toBeString();
+    expect($manifest->definitions())->toBeArray();
 });

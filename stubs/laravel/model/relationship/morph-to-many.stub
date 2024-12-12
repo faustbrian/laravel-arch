@@ -1,4 +1,0 @@
-    public function {{ relationship }}(): MorphToMany
-    {
-        return $this->morphToMany({{ related }}::class, '{{ name }}');
-    }

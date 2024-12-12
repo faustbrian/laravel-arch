@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Mail\/OrderShipped.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Mail;\n\nuse Illuminate\\Mail\\Mailable;\nuse Illuminate\\Mail\\Mailables\\Content;\nuse Illuminate\\Mail\\Mailables\\Envelope;\nuse Illuminate\\Queue\\SerializesModels;\n\nclass OrderShipped extends Mailable\n{\n    use SerializesModels;\n\n    \/**\n     * Get the message envelope.\n     *\/\n    public function envelope(): Envelope\n    {\n        return new Envelope(\n            subject: 'Order Shipped',\n        );\n    }\n\n    \/**\n     * Get the message content definition.\n     *\/\n    public function content(): Content\n    {\n        return new Content(\n            view: 'mail.order-shipped',\n        );\n    }\n\n    \/**\n     * Get the attachments for the message.\n     *\n     * @return array<int, \\Illuminate\\Mail\\Mailables\\Attachment>\n     *\/\n    public function attachments(): array\n    {\n        return [];\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

@@ -1,3 +1,0 @@
-Mail::fake();
-
-Mail::assertSent({{ class }}::class);

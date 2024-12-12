@@ -1,7 +1,0 @@
-    /**
-     * Store the newly created resource in storage.
-     */
-    public function store({{ request }} $request): never
-    {
-        abort(404);
-    }

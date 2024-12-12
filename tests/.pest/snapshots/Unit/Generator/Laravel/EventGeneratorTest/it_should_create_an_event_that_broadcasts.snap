@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Events\/InvoicePaid.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Events;\n\nuse Illuminate\\Broadcasting\\Channel;\nuse Illuminate\\Broadcasting\\InteractsWithSockets;\n\/\/ use Illuminate\\Broadcasting\\PresenceChannel;\nuse Illuminate\\Broadcasting\\PrivateChannel;\nuse Illuminate\\Contracts\\Broadcasting\\ShouldBroadcast;\nuse Illuminate\\Foundation\\Events\\Dispatchable;\nuse Illuminate\\Queue\\SerializesModels;\n\nclass InvoicePaid implements ShouldBroadcast\n{\n    use Dispatchable;\n    use InteractsWithSockets;\n    use SerializesModels;\n\n\n    \/**\n     * Get the channels the event should broadcast on.\n     *\n     * @return array<int, Channel>\n     *\/\n    public function broadcastOn(): array\n    {\n        return [\n            new PrivateChannel('channel-name'),\n        ];\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

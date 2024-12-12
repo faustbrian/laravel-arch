@@ -16,7 +16,7 @@ it('should create a nova filter', function (string $filter): void {
         'app/Nova/Filters/UserType.php',
     ]);
 
-    assertMatchesGeneratorSnapshot(FilterGenerator::class, "nova/filter/{$filter}");
+    assertMatchesGeneratorSnapshot(FilterGenerator::class, 'nova/filter/'.$filter);
 })->with([
     'boolean',
     'date',

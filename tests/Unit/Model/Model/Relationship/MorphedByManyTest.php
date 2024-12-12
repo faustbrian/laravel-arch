@@ -32,16 +32,16 @@ it('can create an instance', function (): void {
 });
 
 it('can create an instance from a string', function (): void {
-    $subject = MorphedByMany::fromString('related name table foreignPivotKey relatedPivotKey parentKey relatedKey relation');
+    $morphedByMany = MorphedByMany::fromString('related name table foreignPivotKey relatedPivotKey parentKey relatedKey relation');
 
-    expect($subject->related())->toBe('related');
-    expect($subject->name())->toBe('name');
-    expect($subject->table())->toBe('table');
-    expect($subject->foreignPivotKey())->toBe('foreignPivotKey');
-    expect($subject->relatedPivotKey())->toBe('relatedPivotKey');
-    expect($subject->parentKey())->toBe('parentKey');
-    expect($subject->relatedKey())->toBe('relatedKey');
-    expect($subject->relation())->toBe('relation');
+    expect($morphedByMany->related())->toBe('related');
+    expect($morphedByMany->name())->toBe('name');
+    expect($morphedByMany->table())->toBe('table');
+    expect($morphedByMany->foreignPivotKey())->toBe('foreignPivotKey');
+    expect($morphedByMany->relatedPivotKey())->toBe('relatedPivotKey');
+    expect($morphedByMany->parentKey())->toBe('parentKey');
+    expect($morphedByMany->relatedKey())->toBe('relatedKey');
+    expect($morphedByMany->relation())->toBe('relation');
 });
 
 it('can return an array representation', function (): void {

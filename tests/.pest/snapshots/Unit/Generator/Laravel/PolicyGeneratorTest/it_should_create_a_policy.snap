@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Policies\/PostPolicy.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Policies;\n\nuse App\\Models\\Post;\nuse App\\Models\\User;\n\nclass PostPolicy\n{\n    \/**\n     * Determine whether the user can view any models.\n     *\/\n    public function viewAny(User $user): bool\n    {\n        \/\/\n    }\n\n    \/**\n     * Determine whether the user can view the model.\n     *\/\n    public function view(User $user, Post $post): bool\n    {\n        \/\/\n    }\n\n    \/**\n     * Determine whether the user can create models.\n     *\/\n    public function create(User $user): bool\n    {\n        \/\/\n    }\n\n    \/**\n     * Determine whether the user can update the model.\n     *\/\n    public function update(User $user, Post $post): bool\n    {\n        \/\/\n    }\n\n    \/**\n     * Determine whether the user can delete the model.\n     *\/\n    public function delete(User $user, Post $post): bool\n    {\n        \/\/\n    }\n\n    \/**\n     * Determine whether the user can restore the model.\n     *\/\n    public function restore(User $user, Post $post): bool\n    {\n        \/\/\n    }\n\n    \/**\n     * Determine whether the user can permanently delete the model.\n     *\/\n    public function forceDelete(User $user, Post $post): bool\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

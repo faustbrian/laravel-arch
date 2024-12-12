@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Models\/User.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Factories\\HasFactory;\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass User extends Model\n{\n    use HasFactory;\n\n\/**\n     * The \"booted\" method of the model.\n     *\/\n    protected static function booted(): void\n    {\nstatic::addGlobalScope('ancient', function (Builder $builder) {\n            \/\/\n        });\n    }\n    \/**\n     * The attributes that are mass assignable.\n     *\n     * @var array<string>\n     *\/\n    protected $fillable = ['name' ,'mail'];\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

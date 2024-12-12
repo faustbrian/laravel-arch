@@ -1,19 +1,14 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Property BombenProdukt\\\\Arch\\\\Artisan\\\\AbstractCommand\\:\\:\\$options \\(array\\<int, string\\>\\) does not accept array\\<int\\|string, string\\|null\\>\\.$#"
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Arch\\\\Artisan\\\\AbstractCommand\\:\\:\\$options \\(array\\<int, string\\>\\) does not accept array\\<int\\|string, string\\|null\\>\\.$#"
 			count: 1
 			path: src/Artisan/AbstractCommand.php
-
-		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Command\\\\BuildCommand\\:\\:outputStyle\\(\\) has no return type specified\\.$#"
-			count: 1
-			path: src/Command/BuildCommand.php
-
-		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Command\\\\BuildCommand\\:\\:outputStyle\\(\\) has parameter \\$action with no type specified\\.$#"
-			count: 1
-			path: src/Command/BuildCommand.php
 
 		-
 			message: "#^Parameter \\#1 \\$array of function array_keys expects array, mixed given\\.$#"
@@ -26,7 +21,117 @@ parameters:
 			path: src/Command/BuildCommand.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Environment\\\\GeneratorRepository\\:\\:findByAccessor\\(\\) should return BombenProdukt\\\\Arch\\\\Environment\\\\Generator but returns mixed\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Configuration\\:\\:__construct\\(\\) has parameter \\$extensions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Configuration.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Configuration\\:\\:extensions\\(\\) has parameter \\$extensions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Configuration.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Configuration\\:\\:toArray\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Configuration.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\ClassRendererInterface\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/ClassRendererInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\ExtensionInterface\\:\\:register\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/ExtensionInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\FileRendererInterface\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/FileRendererInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\MetadataInterface\\:\\:mergeMetadata\\(\\) has parameter \\$metadata with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/MetadataInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\MetadataInterface\\:\\:metadata\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/MetadataInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\MetadataInterface\\:\\:replaceMetadata\\(\\) has parameter \\$metadata with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/MetadataInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\StatementInterface\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/StatementInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\StatementInterface\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/StatementInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\StatementInterface\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/StatementInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\StatementInterface\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/StatementInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\StatementInterface\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/StatementInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\StatementInterface\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/StatementInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\StringRendererInterface\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/StringRendererInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\TokenizerInterface\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/TokenizerInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\TokenizerInterface\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/TokenizerInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\TreeInterface\\:\\:get\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/TreeInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Contract\\\\TreeInterface\\:\\:merge\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contract/TreeInterface.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Environment\\\\GeneratorRepository\\:\\:add\\(\\) has parameter \\$generator with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Environment/GeneratorRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Environment\\\\GeneratorRepository\\:\\:all\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Environment/GeneratorRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Environment\\\\GeneratorRepository\\:\\:findByAccessor\\(\\) should return BaseCodeOy\\\\Arch\\\\Environment\\\\Generator but returns mixed\\.$#"
 			count: 1
 			path: src/Environment/GeneratorRepository.php
 
@@ -41,17 +146,107 @@ parameters:
 			path: src/Environment/GeneratorRepository.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Environment\\\\Statement\\:\\:__construct\\(\\) has parameter \\$methods with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Environment/Statement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Environment\\\\Statement\\:\\:methods\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Environment/Statement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Environment\\\\StatementRepository\\:\\:add\\(\\) has parameter \\$statement with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Environment/StatementRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Environment\\\\StatementRepository\\:\\:all\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Environment/StatementRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Environment\\\\Tokenizer\\:\\:__construct\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Environment/Tokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Environment\\\\Tokenizer\\:\\:configuration\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Environment/Tokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Environment\\\\TokenizerRepository\\:\\:add\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Environment/TokenizerRepository.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Extension\\\\Artisan\\\\NovaExtension\\:\\:register\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Extension/Artisan/NovaExtension.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Extension\\\\ArtisanExtension\\:\\:register\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Extension/ArtisanExtension.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Extension\\\\InertiaExtension\\:\\:register\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Extension/InertiaExtension.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Extension\\\\Laravel\\\\NovaExtension\\:\\:register\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Extension/Laravel/NovaExtension.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Extension\\\\LaravelExtension\\:\\:register\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Extension/LaravelExtension.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Extension\\\\LivewireExtension\\:\\:register\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Extension/LivewireExtension.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToConstructor\\(\\)\\.$#"
+			count: 1
+			path: src/Generator/AbstractGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:className\\(\\)\\.$#"
+			count: 1
+			path: src/Generator/AbstractGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:relativeNamespace\\(\\)\\.$#"
+			count: 1
+			path: src/Generator/AbstractGenerator.php
+
+		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 2
 			path: src/Generator/AbstractGenerator.php
 
 		-
-			message: "#^Offset string on array\\<string, array\\<string\\>\\> on left side of \\?\\? always exists and is not nullable\\.$#"
-			count: 2
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Generator\\\\AbstractGenerator\\:\\:getStubData\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
 			path: src/Generator/AbstractGenerator.php
 
 		-
-			message: "#^Parameter \\#1 \\$properties of static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToConstructor\\(\\) expects array, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Generator\\\\AbstractGenerator\\:\\:getStubData\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Generator/AbstractGenerator.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Generator\\\\AbstractGenerator\\:\\:renderClass\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Generator/AbstractGenerator.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Generator\\\\AbstractGenerator\\:\\:renderFile\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Generator/AbstractGenerator.php
 
@@ -66,63 +261,83 @@ parameters:
 			path: src/Generator/AbstractGenerator.php
 
 		-
-			message: "#^Property BombenProdukt\\\\Arch\\\\Generator\\\\AbstractGenerator\\:\\:\\$output \\(array\\<string, array\\<string\\>\\>\\) does not accept array\\<string, array\\<string\\|null\\>\\>\\.$#"
+			message: "#^Property BaseCodeOy\\\\Arch\\\\Generator\\\\AbstractGenerator\\:\\:\\$output \\(array\\<string, array\\<string\\>\\>\\) does not accept array\\<string, array\\<string\\|null\\>\\>\\.$#"
 			count: 1
 			path: src/Generator/AbstractGenerator.php
 
 		-
-			message: "#^Cannot assign new offset to array\\<int\\<0, max\\>, string\\>\\|string\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:modelNamespace\\(\\)\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ChannelGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:formRequestNamespace\\(\\)\\.$#"
 			count: 1
 			path: src/Generator/Laravel/ControllerGenerator.php
 
 		-
-			message: "#^Parameter \\#1 \\$value of function count expects array\\|Countable, array\\<int\\<0, max\\>, string\\>\\|string given\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:indent\\(\\)\\.$#"
 			count: 1
 			path: src/Generator/Laravel/ControllerGenerator.php
 
 		-
-			message: "#^Parameter \\#2 \\$array of function implode expects array\\<string\\>, array\\<string, array\\<int\\<0, max\\>, string\\>\\|string\\> given\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:modelNamespace\\(\\)\\.$#"
+			count: 3
+			path: src/Generator/Laravel/ControllerGenerator.php
+
+		-
+			message: "#^Cannot assign new offset to array\\<int\\<0, max\\>, mixed\\>\\|string\\.$#"
 			count: 1
 			path: src/Generator/Laravel/ControllerGenerator.php
 
 		-
-			message: "#^Parameter \\#2 \\$array of function implode expects array\\|null, array\\<int\\<0, max\\>, string\\>\\|string given\\.$#"
+			message: "#^Parameter \\#1 \\$value of function count expects array\\|Countable, array\\<int\\<0, max\\>, mixed\\>\\|string given\\.$#"
 			count: 1
 			path: src/Generator/Laravel/ControllerGenerator.php
 
 		-
-			message: "#^Short ternary operator is not allowed\\. Use null coalesce operator if applicable or consider using long ternary\\.$#"
-			count: 1
+			message: "#^Parameter \\#2 \\$array of function implode expects array\\<string\\>, array\\<int\\|string, array\\<int\\<0, max\\>, mixed\\>\\|string\\> given\\.$#"
+			count: 2
 			path: src/Generator/Laravel/ControllerGenerator.php
 
 		-
-			message: "#^Cannot assign new offset to array\\<int\\<0, max\\>, string\\>\\|string\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:indent\\(\\)\\.$#"
 			count: 1
 			path: src/Generator/Laravel/ControllerTestGenerator.php
 
 		-
-			message: "#^Parameter \\#1 \\$value of function count expects array\\|Countable, array\\<int\\<0, max\\>, string\\>\\|string given\\.$#"
+			message: "#^Cannot assign new offset to array\\<int\\<0, max\\>, mixed\\>\\|string\\.$#"
 			count: 1
 			path: src/Generator/Laravel/ControllerTestGenerator.php
 
 		-
-			message: "#^Parameter \\#2 \\$array of function implode expects array\\<string\\>, array\\<string, array\\<int\\<0, max\\>, string\\>\\|string\\> given\\.$#"
+			message: "#^Parameter \\#1 \\$value of function count expects array\\|Countable, array\\<int\\<0, max\\>, mixed\\>\\|string given\\.$#"
 			count: 1
 			path: src/Generator/Laravel/ControllerTestGenerator.php
 
 		-
-			message: "#^Parameter \\#2 \\$array of function implode expects array\\|null, array\\<int\\<0, max\\>, string\\>\\|string given\\.$#"
-			count: 1
+			message: "#^Parameter \\#2 \\$array of function implode expects array\\<string\\>, array\\<int\\|string, array\\<int\\<0, max\\>, mixed\\>\\|string\\> given\\.$#"
+			count: 2
 			path: src/Generator/Laravel/ControllerTestGenerator.php
 
 		-
-			message: "#^Short ternary operator is not allowed\\. Use null coalesce operator if applicable or consider using long ternary\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:indent\\(\\)\\.$#"
 			count: 1
-			path: src/Generator/Laravel/ControllerTestGenerator.php
+			path: src/Generator/Laravel/FactoryGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:modelNamespace\\(\\)\\.$#"
+			count: 3
+			path: src/Generator/Laravel/FactoryGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:toArrayItem\\(\\)\\.$#"
+			count: 3
+			path: src/Generator/Laravel/FactoryGenerator.php
 
 		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
-			count: 4
+			count: 3
 			path: src/Generator/Laravel/FactoryGenerator.php
 
 		-
@@ -146,7 +361,7 @@ parameters:
 			path: src/Generator/Laravel/FactoryGenerator.php
 
 		-
-			message: "#^Parameter \\#1 \\$call of method BombenProdukt\\\\Arch\\\\Generator\\\\Laravel\\\\FactoryGenerator\\:\\:prependFaker\\(\\) expects string, string\\|null given\\.$#"
+			message: "#^Parameter \\#1 \\$call of method BaseCodeOy\\\\Arch\\\\Generator\\\\Laravel\\\\FactoryGenerator\\:\\:prependFaker\\(\\) expects string, string\\|null given\\.$#"
 			count: 2
 			path: src/Generator/Laravel/FactoryGenerator.php
 
@@ -156,19 +371,34 @@ parameters:
 			path: src/Generator/Laravel/FactoryGenerator.php
 
 		-
-			message: "#^Parameter \\#2 \\$value of static method Illuminate\\\\Support\\\\Str\\:\\:toArrayItem\\(\\) expects string, mixed given\\.$#"
+			message: "#^Strict comparison using \\=\\=\\= between mixed~\\('id'\\|'timestamps'\\) and 'id' will always evaluate to false\\.$#"
 			count: 1
 			path: src/Generator/Laravel/FactoryGenerator.php
 
 		-
-			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArrayItem\\(\\)\\.$#"
 			count: 1
 			path: src/Generator/Laravel/FormRequestGenerator.php
 
 		-
-			message: "#^Short ternary operator is not allowed\\. Use null coalesce operator if applicable or consider using long ternary\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:indent\\(\\)\\.$#"
 			count: 1
 			path: src/Generator/Laravel/FormRequestGenerator.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Generator\\\\Laravel\\\\FormRequestGenerator\\:\\:rulesToString\\(\\) has parameter \\$rules with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Generator/Laravel/FormRequestGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:indent\\(\\)\\.$#"
+			count: 3
+			path: src/Generator/Laravel/MigrationGenerator.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Generator\\\\Laravel\\\\MigrationGenerator\\:\\:createMigrations\\(\\) has parameter \\$tables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Generator/Laravel/MigrationGenerator.php
 
 		-
 			message: "#^Unable to resolve the template type TKey in call to function collect$#"
@@ -181,9 +411,59 @@ parameters:
 			path: src/Generator/Laravel/MigrationGenerator.php
 
 		-
-			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
-			count: 3
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\)\\.$#"
+			count: 1
 			path: src/Generator/Laravel/ModelGenerator.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Generator\\\\Laravel\\\\ModelGenerator\\:\\:buildRelationships\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ModelGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:modelNamespace\\(\\)\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ModelTestGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:modelNamespace\\(\\)\\.$#"
+			count: 1
+			path: src/Generator/Laravel/Nova/ResourceGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:className\\(\\)\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ObserverGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:classNameCamel\\(\\)\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ObserverGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:modelNamespace\\(\\)\\.$#"
+			count: 1
+			path: src/Generator/Laravel/ObserverGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:className\\(\\)\\.$#"
+			count: 2
+			path: src/Generator/Laravel/PolicyGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:classNameCamel\\(\\)\\.$#"
+			count: 1
+			path: src/Generator/Laravel/PolicyGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:modelNamespace\\(\\)\\.$#"
+			count: 2
+			path: src/Generator/Laravel/PolicyGenerator.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:controllerNamespace\\(\\)\\.$#"
+			count: 1
+			path: src/Generator/Laravel/RouteGenerator.php
 
 		-
 			message: "#^Foreach overwrites \\$routes with its value variable\\.$#"
@@ -191,9 +471,9 @@ parameters:
 			path: src/Generator/Laravel/RouteGenerator.php
 
 		-
-			message: "#^Only booleans are allowed in an if condition, int\\<0, max\\> given\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:livewireComponentNamespace\\(\\)\\.$#"
 			count: 1
-			path: src/Generator/Laravel/RouteGenerator.php
+			path: src/Generator/Livewire/TestGenerator.php
 
 		-
 			message: "#^Dynamic call to static method Illuminate\\\\Support\\\\Facades\\\\File\\:\\:get\\(\\)\\.$#"
@@ -201,12 +481,22 @@ parameters:
 			path: src/Mixin/FileMixin.php
 
 		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:className\\(\\)\\.$#"
+			count: 4
+			path: src/Mixin/StrMixin.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:generatorNamespace\\(\\)\\.$#"
+			count: 36
+			path: src/Mixin/StrMixin.php
+
+		-
 			message: "#^Cannot assign new offset to array\\<int, string\\>\\|string\\.$#"
 			count: 1
 			path: src/Mixin/StrMixin.php
 
 		-
-			message: "#^Parameter \\#1 \\$accessor of method BombenProdukt\\\\Arch\\\\Environment\\\\GeneratorRepository\\:\\:findByAccessor\\(\\) expects string, string\\|null given\\.$#"
+			message: "#^Parameter \\#1 \\$accessor of method BaseCodeOy\\\\Arch\\\\Environment\\\\GeneratorRepository\\:\\:findByAccessor\\(\\) expects string, string\\|null given\\.$#"
 			count: 1
 			path: src/Mixin/StrMixin.php
 
@@ -216,82 +506,242 @@ parameters:
 			path: src/Mixin/StrMixin.php
 
 		-
-			message: "#^Short ternary operator is not allowed\\. Use null coalesce operator if applicable or consider using long ternary\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:className\\(\\)\\.$#"
 			count: 1
 			path: src/Model/AbstractData.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Column\\:\\:foreignKey\\(\\) should return string\\|null but returns mixed\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:classNameStudly\\(\\)\\.$#"
+			count: 1
+			path: src/Model/AbstractData.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffixless\\(\\)\\.$#"
+			count: 1
+			path: src/Model/AbstractData.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\AbstractData\\:\\:mergeMetadata\\(\\) has parameter \\$metadata with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/AbstractData.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\AbstractData\\:\\:metadata\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/AbstractData.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\AbstractData\\:\\:replaceMetadata\\(\\) has parameter \\$metadata with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/AbstractData.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Arch\\\\Model\\\\AbstractData\\:\\:\\$metadata type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/AbstractData.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 1
+			path: src/Model/Channel.php
+
+		-
+			message: "#^Anonymous function should return false but returns bool\\.$#"
 			count: 1
 			path: src/Model/Column.php
 
 		-
-			message: "#^Strict comparison using \\=\\=\\= between int and 'default' will always evaluate to false\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Column\\:\\:__construct\\(\\) has parameter \\$attributes with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Model/Column.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Controller\\:\\:parentModel\\(\\) should return string but returns string\\|null\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Column\\:\\:__construct\\(\\) has parameter \\$modifiers with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Column.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Column\\:\\:attributes\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Column.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Column\\:\\:foreignKey\\(\\) should return string\\|null but returns mixed\\.$#"
+			count: 1
+			path: src/Model/Column.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Column\\:\\:modifiers\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Column.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 4
+			path: src/Model/Controller.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Controller\\:\\:parentModel\\(\\) should return string but returns string\\|null\\.$#"
 			count: 1
 			path: src/Model/Controller.php
 
 		-
-			message: "#^Class BombenProdukt\\\\Arch\\\\Model\\\\GeneratorResult implements generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 1
+			path: src/Model/Factory.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 1
+			path: src/Model/FormRequest.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\FormRequest\\:\\:__construct\\(\\) has parameter \\$rules with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/FormRequest.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\FormRequest\\:\\:rules\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/FormRequest.php
+
+		-
+			message: "#^Class BaseCodeOy\\\\Arch\\\\Model\\\\GeneratorResult implements generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
 			count: 1
 			path: src/Model/GeneratorResult.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Index\\:\\:columns\\(\\) has no return type specified\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\GeneratorResult\\:\\:__construct\\(\\) has parameter \\$created with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/GeneratorResult.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\GeneratorResult\\:\\:__construct\\(\\) has parameter \\$deleted with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/GeneratorResult.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\GeneratorResult\\:\\:__construct\\(\\) has parameter \\$updated with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/GeneratorResult.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\GeneratorResult\\:\\:created\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/GeneratorResult.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\GeneratorResult\\:\\:deleted\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/GeneratorResult.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\GeneratorResult\\:\\:updated\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/GeneratorResult.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Index\\:\\:__construct\\(\\) has parameter \\$columns with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Model/Index.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Index\\:\\:type\\(\\) has no return type specified\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Index\\:\\:columns\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Model/Index.php
 
 		-
-			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
-			count: 1
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 2
 			path: src/Model/Livewire.php
 
 		-
-			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
-			count: 1
-			path: src/Model/Mail.php
-
-		-
-			message: "#^Class BombenProdukt\\\\Arch\\\\Model\\\\Manifest has an uninitialized readonly property \\$arch\\. Assign it in the constructor\\.$#"
+			message: "#^Class BaseCodeOy\\\\Arch\\\\Model\\\\Manifest has an uninitialized readonly property \\$arch\\. Assign it in the constructor\\.$#"
 			count: 1
 			path: src/Model/Manifest.php
 
 		-
-			message: "#^Class BombenProdukt\\\\Arch\\\\Model\\\\Manifest has an uninitialized readonly property \\$definitions\\. Assign it in the constructor\\.$#"
+			message: "#^Class BaseCodeOy\\\\Arch\\\\Model\\\\Manifest has an uninitialized readonly property \\$definitions\\. Assign it in the constructor\\.$#"
 			count: 1
 			path: src/Model/Manifest.php
 
 		-
-			message: "#^Readonly property BombenProdukt\\\\Arch\\\\Model\\\\Manifest\\:\\:\\$arch is assigned outside of the constructor\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Manifest\\:\\:definitions\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Model/Manifest.php
 
 		-
-			message: "#^Readonly property BombenProdukt\\\\Arch\\\\Model\\\\Manifest\\:\\:\\$definitions is assigned outside of the constructor\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Manifest\\:\\:setDefinitions\\(\\) has parameter \\$definitions with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Model/Manifest.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Model\\:\\:belongsToMany\\(\\) should return array\\<BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\BelongsToMany\\> but returns array\\<BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\RelationshipInterface\\>\\.$#"
+			message: "#^Property BaseCodeOy\\\\Arch\\\\Model\\\\Manifest\\:\\:\\$definitions type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Manifest.php
+
+		-
+			message: "#^Readonly property BaseCodeOy\\\\Arch\\\\Model\\\\Manifest\\:\\:\\$arch is assigned outside of the constructor\\.$#"
+			count: 1
+			path: src/Model/Manifest.php
+
+		-
+			message: "#^Readonly property BaseCodeOy\\\\Arch\\\\Model\\\\Manifest\\:\\:\\$definitions is assigned outside of the constructor\\.$#"
+			count: 1
+			path: src/Model/Manifest.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Migration\\:\\:__construct\\(\\) has parameter \\$columns with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Migration.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Migration\\:\\:__construct\\(\\) has parameter \\$indexes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Migration.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Migration\\:\\:columns\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Migration.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Migration\\:\\:indexes\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Migration.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 2
+			path: src/Model/Model.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Model\\:\\:belongsToMany\\(\\) should return array\\<BaseCodeOy\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\BelongsToMany\\> but returns array\\<BaseCodeOy\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\RelationshipInterface\\>\\.$#"
 			count: 1
 			path: src/Model/Model.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Model\\:\\:morphedByMany\\(\\) should return array\\<BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\MorphedByMany\\> but returns array\\<BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\RelationshipInterface\\>\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Model\\:\\:morphedByMany\\(\\) should return array\\<BaseCodeOy\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\MorphedByMany\\> but returns array\\<BaseCodeOy\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\RelationshipInterface\\>\\.$#"
 			count: 1
 			path: src/Model/Model.php
 
 		-
-			message: "#^Call to an undefined method BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\AbstractRelationship\\:\\:name\\(\\)\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 2
+			path: src/Model/Model/GlobalScope.php
+
+		-
+			message: "#^Call to an undefined method BaseCodeOy\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\AbstractRelationship\\:\\:name\\(\\)\\.$#"
+			count: 1
+			path: src/Model/Model/Relationship/AbstractRelationship.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:classNameCamel\\(\\)\\.$#"
+			count: 1
+			path: src/Model/Model/Relationship/AbstractRelationship.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:classNameStudly\\(\\)\\.$#"
 			count: 1
 			path: src/Model/Model/Relationship/AbstractRelationship.php
 
@@ -301,12 +751,22 @@ parameters:
 			path: src/Model/Model/Relationship/AbstractRelationship.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\MorphMany\\:\\:type\\(\\) should return string but returns string\\|null\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:className\\(\\)\\.$#"
+			count: 1
+			path: src/Model/Model/Relationship/BelongsToMany.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\BelongsToMany\\:\\:models\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Model/Relationship/BelongsToMany.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\MorphMany\\:\\:type\\(\\) should return string but returns string\\|null\\.$#"
 			count: 1
 			path: src/Model/Model/Relationship/MorphMany.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\MorphOne\\:\\:type\\(\\) should return string but returns string\\|null\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\MorphOne\\:\\:type\\(\\) should return string but returns string\\|null\\.$#"
 			count: 1
 			path: src/Model/Model/Relationship/MorphOne.php
 
@@ -316,19 +776,129 @@ parameters:
 			path: src/Model/Model/Relationship/RelationshipFactory.php
 
 		-
-			message: "#^Interface BombenProdukt\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\RelationshipInterface extends generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\RelationshipFactory\\:\\:make\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Model/Relationship/RelationshipFactory.php
+
+		-
+			message: "#^Interface BaseCodeOy\\\\Arch\\\\Model\\\\Model\\\\Relationship\\\\RelationshipInterface extends generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable but does not specify its types\\: TKey, TValue$#"
 			count: 1
 			path: src/Model/Model/Relationship/RelationshipInterface.php
 
 		-
-			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
 			count: 1
-			path: src/Model/ViewComponent.php
+			path: src/Model/Observer.php
 
 		-
-			message: "#^Parameter \\#1 \\$base of static method BombenProdukt\\\\Arch\\\\Path\\:\\:path\\(\\) expects string, mixed given\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 1
+			path: src/Model/Policy.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 1
+			path: src/Model/Resource.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 1
+			path: src/Model/ResourceCollection.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Route\\:\\:__construct\\(\\) has parameter \\$methods with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Route.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Model\\\\Route\\:\\:methods\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Model/Route.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 1
+			path: src/Model/Seeder.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 1
+			path: src/Model/ServiceProvider.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 1
+			path: src/Model/Test.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:suffix\\(\\)\\.$#"
+			count: 1
+			path: src/Model/ViewComposer.php
+
+		-
+			message: "#^Parameter \\#1 \\$base of static method BaseCodeOy\\\\Arch\\\\Path\\:\\:path\\(\\) expects string, mixed given\\.$#"
 			count: 3
 			path: src/Path.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Renderer\\\\BladeClassRenderer\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Renderer/BladeClassRenderer.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Facades\\\\File\\:\\:stub\\(\\)\\.$#"
+			count: 1
+			path: src/Renderer/BladeFileRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Renderer\\\\BladeFileRenderer\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Renderer/BladeFileRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Renderer\\\\BladeStringRenderer\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Renderer/BladeStringRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Renderer\\\\StubClassRenderer\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Renderer/StubClassRenderer.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Facades\\\\File\\:\\:stub\\(\\)\\.$#"
+			count: 1
+			path: src/Renderer/StubFileRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Renderer\\\\StubFileRenderer\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Renderer/StubFileRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Renderer\\\\StubStringRenderer\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Renderer/StubStringRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Renderer\\\\TwigClassRenderer\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Renderer/TwigClassRenderer.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Facades\\\\File\\:\\:stub\\(\\)\\.$#"
+			count: 1
+			path: src/Renderer/TwigFileRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Renderer\\\\TwigFileRenderer\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Renderer/TwigFileRenderer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Renderer\\\\TwigStringRenderer\\:\\:render\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Renderer/TwigStringRenderer.php
 
 		-
 			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
@@ -346,12 +916,117 @@ parameters:
 			path: src/ServiceProvider.php
 
 		-
-			message: "#^Only booleans are allowed in a ternary operator condition, array given\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:mapValueToProperty\\(\\)\\.$#"
 			count: 1
 			path: src/Statement/Inertia/RenderStatement.php
 
 		-
-			message: "#^Parameter \\#1 \\$properties of static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\) expects array, array\\|null given\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Inertia/RenderStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Inertia/RenderStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Inertia\\\\RenderStatement\\:\\:__construct\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Inertia/RenderStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Inertia\\\\RenderStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Inertia/RenderStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Inertia\\\\RenderStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Inertia/RenderStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Inertia\\\\RenderStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Inertia/RenderStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Inertia\\\\RenderStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Inertia/RenderStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Inertia\\\\RenderStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Inertia/RenderStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Inertia\\\\RenderStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Inertia/RenderStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Inertia\\\\RenderStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Inertia/RenderStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:mapValueToProperty\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:controllerNamespace\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ActionRedirectStatement\\:\\:__construct\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ActionRedirectStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ActionRedirectStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ActionRedirectStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ActionRedirectStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ActionRedirectStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ActionRedirectStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ActionRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ActionRedirectStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Statement/Laravel/ActionRedirectStatement.php
 
@@ -361,54 +1036,489 @@ parameters:
 			path: src/Statement/Laravel/ActionRedirectStatement.php
 
 		-
-			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
-			count: 2
-			path: src/Statement/Laravel/DispatchStatement.php
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\AuthorizeStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/AuthorizeStatement.php
 
 		-
-			message: "#^Only booleans are allowed in a ternary operator condition, array given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\AuthorizeStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/AuthorizeStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\AuthorizeStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/AuthorizeStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\AuthorizeStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/AuthorizeStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\AuthorizeStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/AuthorizeStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\AuthorizeStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/AuthorizeStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\AuthorizeStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/AuthorizeStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:mapValueToProperty\\(\\)\\.$#"
 			count: 1
 			path: src/Statement/Laravel/DispatchStatement.php
 
 		-
-			message: "#^Parameter \\$onConnection of class BombenProdukt\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement constructor expects string\\|null, mixed given\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToVariableList\\(\\)\\.$#"
 			count: 1
 			path: src/Statement/Laravel/DispatchStatement.php
 
 		-
-			message: "#^Parameter \\$onQueue of class BombenProdukt\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement constructor expects string\\|null, mixed given\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
 			count: 1
 			path: src/Statement/Laravel/DispatchStatement.php
 
 		-
-			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement\\:\\:__construct\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Statement/Laravel/DispatchStatement.php
 
 		-
-			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Parameter \\$onConnection of class BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Parameter \\$onQueue of class BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\DispatchStatement constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Static method BaseCodeOy\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/DispatchStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:__construct\\(\\) has parameter \\$columns with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:getModelClass\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:getModelVariable\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:handleCreate\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:handleDelete\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:handleDestroy\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:handleFind\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:handleSave\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:handleUpdate\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\EloquentStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/EloquentStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:mapValueToProperty\\(\\)\\.$#"
 			count: 1
 			path: src/Statement/Laravel/FireStatement.php
 
 		-
-			message: "#^Parameter \\$recipient of class BombenProdukt\\\\Arch\\\\Statement\\\\Laravel\\\\MailStatement constructor expects string, mixed given\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToVariableList\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\FireStatement\\:\\:__construct\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\FireStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\FireStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\FireStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\FireStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\FireStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\FireStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\FireStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Static method BaseCodeOy\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/FireStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:mapValueToProperty\\(\\)\\.$#"
 			count: 1
 			path: src/Statement/Laravel/MailStatement.php
 
 		-
-			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToVariableList\\(\\)\\.$#"
 			count: 1
 			path: src/Statement/Laravel/MailStatement.php
 
 		-
-			message: "#^Parameter \\$recipient of class BombenProdukt\\\\Arch\\\\Statement\\\\Laravel\\\\NotificationStatement constructor expects string, mixed given\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\MailStatement\\:\\:__construct\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\MailStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\MailStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\MailStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\MailStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\MailStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\MailStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\MailStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Parameter \\$recipient of class BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\MailStatement constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Static method BaseCodeOy\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/MailStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:mapValueToProperty\\(\\)\\.$#"
 			count: 1
 			path: src/Statement/Laravel/NotificationStatement.php
 
 		-
-			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToVariableList\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotificationStatement\\:\\:__construct\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotificationStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotificationStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotificationStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotificationStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotificationStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotificationStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotificationStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Parameter \\$recipient of class BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotificationStatement constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotificationStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:mapValueToProperty\\(\\)\\.$#"
 			count: 1
 			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToVariableList\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotifyStatement\\:\\:__construct\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotifyStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotifyStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotifyStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotifyStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotifyStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotifyStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\NotifyStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Static method BaseCodeOy\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/NotifyStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\QueryStatement\\:\\:__construct\\(\\) has parameter \\$clauses with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\QueryStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\QueryStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\QueryStatement\\:\\:getModelClass\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\QueryStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\QueryStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\QueryStatement\\:\\:pluckName\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\QueryStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\QueryStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\QueryStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/QueryStatement.php
 
 		-
 			message: "#^Only booleans are allowed in an if condition, mixed given\\.$#"
@@ -426,22 +1536,152 @@ parameters:
 			path: src/Statement/Laravel/QueryStatement.php
 
 		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceCollectionStatement.php
+
+		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
 			path: src/Statement/Laravel/ResourceCollectionStatement.php
 
 		-
-			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceCollectionStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Statement/Laravel/ResourceCollectionStatement.php
 
 		-
-			message: "#^Static method BombenProdukt\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceCollectionStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceCollectionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceCollectionStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceCollectionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceCollectionStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceCollectionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceCollectionStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceCollectionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceCollectionStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceCollectionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceCollectionStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceCollectionStatement.php
+
+		-
+			message: "#^Static method BaseCodeOy\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceCollectionStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
 			count: 1
 			path: src/Statement/Laravel/ResourceStatement.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ResourceStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceStatement.php
+
+		-
+			message: "#^Static method BaseCodeOy\\\\Arch\\\\Facade\\\\Tree\\:\\:add\\(\\) invoked with 2 parameters, 3 required\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ResourceStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:mapValueToProperty\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
 			message: "#^Cannot cast mixed to int\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RespondStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RespondStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RespondStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RespondStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RespondStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RespondStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RespondStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RespondStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Statement/Laravel/RespondStatement.php
 
@@ -456,7 +1696,57 @@ parameters:
 			path: src/Statement/Laravel/RespondStatement.php
 
 		-
-			message: "#^Parameter \\#1 \\$properties of static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\) expects array, array\\|null given\\.$#"
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:mapValueToProperty\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RouteRedirectStatement\\:\\:__construct\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RouteRedirectStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RouteRedirectStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RouteRedirectStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RouteRedirectStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RouteRedirectStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RouteRedirectStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/RouteRedirectStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\RouteRedirectStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Statement/Laravel/RouteRedirectStatement.php
 
@@ -466,18 +1756,138 @@ parameters:
 			path: src/Statement/Laravel/RouteRedirectStatement.php
 
 		-
-			message: "#^Property BombenProdukt\\\\Arch\\\\Statement\\\\Laravel\\\\ValidateStatement\\:\\:\\$rules is never read, only written\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\SessionStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/SessionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\SessionStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/SessionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\SessionStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/SessionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\SessionStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/SessionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\SessionStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/SessionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\SessionStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/SessionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\SessionStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/SessionStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ValidateStatement\\:\\:__construct\\(\\) has parameter \\$rules with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Statement/Laravel/ValidateStatement.php
 
 		-
-			message: "#^Only booleans are allowed in a ternary operator condition, array given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ValidateStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ValidateStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ValidateStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ValidateStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ValidateStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ValidateStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ValidateStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ValidateStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ValidateStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ValidateStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ValidateStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ValidateStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ValidateStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ValidateStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:mapValueToProperty\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ViewStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ViewStatement.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:parseStatement\\(\\)\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ViewStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ViewStatement\\:\\:__construct\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ViewStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ViewStatement\\:\\:code\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ViewStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ViewStatement\\:\\:from\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ViewStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ViewStatement\\:\\:imports\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ViewStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ViewStatement\\:\\:imports\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ViewStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ViewStatement\\:\\:test\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ViewStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ViewStatement\\:\\:traits\\(\\) has parameter \\$context with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Statement/Laravel/ViewStatement.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Statement\\\\Laravel\\\\ViewStatement\\:\\:traits\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Statement/Laravel/ViewStatement.php
 
 		-
 			message: "#^Cannot access offset 'metadata' on mixed\\.$#"
-			count: 4
+			count: 1
 			path: src/Tokenizer/AbstractTokenizer.php
 
 		-
@@ -486,22 +1896,37 @@ parameters:
 			path: src/Tokenizer/AbstractTokenizer.php
 
 		-
-			message: "#^Parameter \\$isNullable of class BombenProdukt\\\\Arch\\\\Model\\\\Property constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\AbstractTokenizer\\:\\:__construct\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/AbstractTokenizer.php
 
 		-
-			message: "#^Parameter \\$isReadonly of class BombenProdukt\\\\Arch\\\\Model\\\\Property constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\AbstractTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/AbstractTokenizer.php
 
 		-
-			message: "#^Parameter \\$type of class BombenProdukt\\\\Arch\\\\Model\\\\Property constructor expects string, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\AbstractTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/AbstractTokenizer.php
 
 		-
-			message: "#^Parameter \\$visibility of class BombenProdukt\\\\Arch\\\\Model\\\\Property constructor expects string, mixed given\\.$#"
+			message: "#^Parameter \\$isNullable of class BaseCodeOy\\\\Arch\\\\Model\\\\Property constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/AbstractTokenizer.php
+
+		-
+			message: "#^Parameter \\$isReadonly of class BaseCodeOy\\\\Arch\\\\Model\\\\Property constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/AbstractTokenizer.php
+
+		-
+			message: "#^Parameter \\$type of class BaseCodeOy\\\\Arch\\\\Model\\\\Property constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/AbstractTokenizer.php
+
+		-
+			message: "#^Parameter \\$visibility of class BaseCodeOy\\\\Arch\\\\Model\\\\Property constructor expects string, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/AbstractTokenizer.php
 
@@ -511,7 +1936,17 @@ parameters:
 			path: src/Tokenizer/Laravel/CastTokenizer.php
 
 		-
-			message: "#^Parameter \\$inbound of class BombenProdukt\\\\Arch\\\\Model\\\\Cast constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\CastTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/CastTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\CastTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/CastTokenizer.php
+
+		-
+			message: "#^Parameter \\$inbound of class BaseCodeOy\\\\Arch\\\\Model\\\\Cast constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/CastTokenizer.php
 
@@ -521,7 +1956,17 @@ parameters:
 			path: src/Tokenizer/Laravel/CastableTokenizer.php
 
 		-
-			message: "#^Parameter \\$castsAttributes of class BombenProdukt\\\\Arch\\\\Model\\\\Castable constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\CastableTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/CastableTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\CastableTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/CastableTokenizer.php
+
+		-
+			message: "#^Parameter \\$castsAttributes of class BaseCodeOy\\\\Arch\\\\Model\\\\Castable constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/CastableTokenizer.php
 
@@ -531,12 +1976,37 @@ parameters:
 			path: src/Tokenizer/Laravel/ChannelTokenizer.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ChannelTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ChannelTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ChannelTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ChannelTokenizer.php
+
+		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/CommandTokenizer.php
 
 		-
-			message: "#^BombenProdukt\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ControllerTokenizer\\:\\:__construct\\(\\) does not call parent constructor from BombenProdukt\\\\Arch\\\\Tokenizer\\\\AbstractTokenizer\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\CommandTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/CommandTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\CommandTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/CommandTokenizer.php
+
+		-
+			message: "#^BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ControllerTokenizer\\:\\:__construct\\(\\) does not call parent constructor from BaseCodeOy\\\\Arch\\\\Tokenizer\\\\AbstractTokenizer\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:className\\(\\)\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
@@ -551,42 +2021,72 @@ parameters:
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ControllerTokenizer\\:\\:determineNameAndModels\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ControllerTokenizer\\:\\:generateResourceTokens\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ControllerTokenizer\\:\\:methodsForResource\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ControllerTokenizer\\:\\:resourceTokens\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ControllerTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ControllerTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ControllerTokenizer.php
+
+		-
 			message: "#^Only booleans are allowed in an if condition, mixed given\\.$#"
 			count: 2
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
 		-
-			message: "#^Parameter \\#1 \\$template of static method BombenProdukt\\\\Arch\\\\Renderer\\\\StringRenderer\\:\\:render\\(\\) expects string, mixed given\\.$#"
+			message: "#^Parameter \\#1 \\$template of static method BaseCodeOy\\\\Arch\\\\Renderer\\\\StringRenderer\\:\\:render\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
 		-
-			message: "#^Parameter \\$authorizeResource of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			message: "#^Parameter \\$authorizeResource of class BaseCodeOy\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
 		-
-			message: "#^Parameter \\$creatable of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			message: "#^Parameter \\$creatable of class BaseCodeOy\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
 		-
-			message: "#^Parameter \\$invokable of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			message: "#^Parameter \\$invokable of class BaseCodeOy\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
 		-
-			message: "#^Parameter \\$plain of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			message: "#^Parameter \\$plain of class BaseCodeOy\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
 		-
-			message: "#^Parameter \\$resource of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			message: "#^Parameter \\$resource of class BaseCodeOy\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
 		-
-			message: "#^Parameter \\$singleton of class BombenProdukt\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
+			message: "#^Parameter \\$singleton of class BaseCodeOy\\\\Arch\\\\Model\\\\Controller constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ControllerTokenizer.php
 
@@ -596,7 +2096,17 @@ parameters:
 			path: src/Tokenizer/Laravel/EventTokenizer.php
 
 		-
-			message: "#^Parameter \\$shouldBroadcast of class BombenProdukt\\\\Arch\\\\Model\\\\Event constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\EventTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/EventTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\EventTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/EventTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldBroadcast of class BaseCodeOy\\\\Arch\\\\Model\\\\Event constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/EventTokenizer.php
 
@@ -606,12 +2116,32 @@ parameters:
 			path: src/Tokenizer/Laravel/FactoryTokenizer.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\FactoryTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/FactoryTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\FactoryTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/FactoryTokenizer.php
+
+		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/FormRequestTokenizer.php
 
 		-
-			message: "#^Parameter \\$rules of class BombenProdukt\\\\Arch\\\\Model\\\\FormRequest constructor expects array, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\FormRequestTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/FormRequestTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\FormRequestTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/FormRequestTokenizer.php
+
+		-
+			message: "#^Parameter \\$rules of class BaseCodeOy\\\\Arch\\\\Model\\\\FormRequest constructor expects array, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/FormRequestTokenizer.php
 
@@ -621,37 +2151,67 @@ parameters:
 			path: src/Tokenizer/Laravel/GlobalScopeTokenizer.php
 
 		-
-			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\GlobalScopeTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
 			count: 1
-			path: src/Tokenizer/Laravel/JobTokenizer.php
+			path: src/Tokenizer/Laravel/GlobalScopeTokenizer.php
 
 		-
-			message: "#^Parameter \\$shouldBeUnique of class BombenProdukt\\\\Arch\\\\Model\\\\Job constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\GlobalScopeTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
-			path: src/Tokenizer/Laravel/JobTokenizer.php
-
-		-
-			message: "#^Parameter \\$shouldQueue of class BombenProdukt\\\\Arch\\\\Model\\\\Job constructor expects bool, mixed given\\.$#"
-			count: 1
-			path: src/Tokenizer/Laravel/JobTokenizer.php
+			path: src/Tokenizer/Laravel/GlobalScopeTokenizer.php
 
 		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
-			path: src/Tokenizer/Laravel/MailTokenizer.php
+			path: src/Tokenizer/Laravel/JobTokenizer.php
 
 		-
-			message: "#^Parameter \\$shouldBeMarkdown of class BombenProdukt\\\\Arch\\\\Model\\\\Mail constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\JobTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/JobTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\JobTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/JobTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldBeUnique of class BaseCodeOy\\\\Arch\\\\Model\\\\Job constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/JobTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldQueue of class BaseCodeOy\\\\Arch\\\\Model\\\\Job constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/JobTokenizer.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/MailTokenizer.php
 
 		-
-			message: "#^Parameter \\$shouldQueue of class BombenProdukt\\\\Arch\\\\Model\\\\Mail constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\MailTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/MailTokenizer.php
 
 		-
-			message: "#^Parameter \\$view of class BombenProdukt\\\\Arch\\\\Model\\\\Mail constructor expects string\\|null, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\MailTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MailTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldBeMarkdown of class BaseCodeOy\\\\Arch\\\\Model\\\\Mail constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MailTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldQueue of class BaseCodeOy\\\\Arch\\\\Model\\\\Mail constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MailTokenizer.php
+
+		-
+			message: "#^Parameter \\$view of class BaseCodeOy\\\\Arch\\\\Model\\\\Mail constructor expects string\\|null, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/MailTokenizer.php
 
@@ -661,32 +2221,107 @@ parameters:
 			path: src/Tokenizer/Laravel/MiddlewareTokenizer.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\MiddlewareTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MiddlewareTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\MiddlewareTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MiddlewareTokenizer.php
+
+		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/MigrationTokenizer.php
 
 		-
-			message: "#^Parameter \\$columns of class BombenProdukt\\\\Arch\\\\Model\\\\Migration constructor expects array, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\MigrationTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/MigrationTokenizer.php
 
 		-
-			message: "#^Parameter \\$indexes of class BombenProdukt\\\\Arch\\\\Model\\\\Migration constructor expects array, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\MigrationTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/MigrationTokenizer.php
+
+		-
+			message: "#^Parameter \\$columns of class BaseCodeOy\\\\Arch\\\\Model\\\\Migration constructor expects array, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MigrationTokenizer.php
+
+		-
+			message: "#^Parameter \\$indexes of class BaseCodeOy\\\\Arch\\\\Model\\\\Migration constructor expects array, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/MigrationTokenizer.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
 
 		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
-			count: 3
+			count: 2
 			path: src/Tokenizer/Laravel/ModelTokenizer.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:buildColumn\\(\\) has no return type specified\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:addController\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ModelTokenizer.php
 
 		-
-			message: "#^Only booleans are allowed in an if condition, array given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:addFactory\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:addFormRequests\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:addMigration\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:addPolicy\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:addResource\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:addSeeder\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:buildModel\\(\\) has parameter \\$modelDefinition with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:configurationKeys\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ModelTokenizer.php
+
+		-
+			message: "#^Only booleans are allowed in &&, array given on the left side\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ModelTokenizer.php
 
@@ -696,17 +2331,12 @@ parameters:
 			path: src/Tokenizer/Laravel/ModelTokenizer.php
 
 		-
-			message: "#^Parameter \\#2 \\$string of function explode expects string, mixed given\\.$#"
+			message: "#^Parameter \\#4 \\$attributes of class BaseCodeOy\\\\Arch\\\\Model\\\\Column constructor expects array, array\\<int, string\\>\\|string given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ModelTokenizer.php
 
 		-
-			message: "#^Parameter \\#4 \\$attributes of class BombenProdukt\\\\Arch\\\\Model\\\\Column constructor expects array, array\\<int, string\\>\\|string given\\.$#"
-			count: 1
-			path: src/Tokenizer/Laravel/ModelTokenizer.php
-
-		-
-			message: "#^Variable method call on \\$this\\(BombenProdukt\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\)\\.$#"
+			message: "#^Variable method call on \\$this\\(BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\)\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ModelTokenizer.php
 
@@ -716,17 +2346,27 @@ parameters:
 			path: src/Tokenizer/Laravel/NotificationTokenizer.php
 
 		-
-			message: "#^Parameter \\$shouldBeMarkdown of class BombenProdukt\\\\Arch\\\\Model\\\\Notification constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\NotificationTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/NotificationTokenizer.php
 
 		-
-			message: "#^Parameter \\$shouldQueue of class BombenProdukt\\\\Arch\\\\Model\\\\Notification constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\NotificationTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/NotificationTokenizer.php
 
 		-
-			message: "#^Parameter \\$view of class BombenProdukt\\\\Arch\\\\Model\\\\Notification constructor expects string\\|null, mixed given\\.$#"
+			message: "#^Parameter \\$shouldBeMarkdown of class BaseCodeOy\\\\Arch\\\\Model\\\\Notification constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/NotificationTokenizer.php
+
+		-
+			message: "#^Parameter \\$shouldQueue of class BaseCodeOy\\\\Arch\\\\Model\\\\Notification constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/NotificationTokenizer.php
+
+		-
+			message: "#^Parameter \\$view of class BaseCodeOy\\\\Arch\\\\Model\\\\Notification constructor expects string\\|null, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/NotificationTokenizer.php
 
@@ -737,6 +2377,16 @@ parameters:
 
 		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\ActionTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\ActionTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
 
@@ -746,17 +2396,17 @@ parameters:
 			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
 
 		-
-			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Action constructor expects string, mixed given\\.$#"
+			message: "#^Parameter \\$name of class BaseCodeOy\\\\Arch\\\\Model\\\\Nova\\\\Action constructor expects string, mixed given\\.$#"
 			count: 2
 			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
 
 		-
-			message: "#^Parameter \\$shouldBeDestructive of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Action constructor expects bool, mixed given\\.$#"
+			message: "#^Parameter \\$shouldBeDestructive of class BaseCodeOy\\\\Arch\\\\Model\\\\Nova\\\\Action constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
 
 		-
-			message: "#^Parameter \\$shouldBeQueued of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Action constructor expects bool, mixed given\\.$#"
+			message: "#^Parameter \\$shouldBeQueued of class BaseCodeOy\\\\Arch\\\\Model\\\\Nova\\\\Action constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/ActionTokenizer.php
 
@@ -771,7 +2421,17 @@ parameters:
 			path: src/Tokenizer/Laravel/Nova/DashboardTokenizer.php
 
 		-
-			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Dashboard constructor expects string, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\DashboardTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/DashboardTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\DashboardTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/DashboardTokenizer.php
+
+		-
+			message: "#^Parameter \\$name of class BaseCodeOy\\\\Arch\\\\Model\\\\Nova\\\\Dashboard constructor expects string, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/DashboardTokenizer.php
 
@@ -786,12 +2446,22 @@ parameters:
 			path: src/Tokenizer/Laravel/Nova/FilterTokenizer.php
 
 		-
-			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Filter constructor expects string, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\FilterTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/FilterTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\FilterTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/FilterTokenizer.php
+
+		-
+			message: "#^Parameter \\$name of class BaseCodeOy\\\\Arch\\\\Model\\\\Nova\\\\Filter constructor expects string, mixed given\\.$#"
 			count: 2
 			path: src/Tokenizer/Laravel/Nova/FilterTokenizer.php
 
 		-
-			message: "#^Parameter \\$type of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Filter constructor expects string, mixed given\\.$#"
+			message: "#^Parameter \\$type of class BaseCodeOy\\\\Arch\\\\Model\\\\Nova\\\\Filter constructor expects string, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/FilterTokenizer.php
 
@@ -806,7 +2476,17 @@ parameters:
 			path: src/Tokenizer/Laravel/Nova/LensTokenizer.php
 
 		-
-			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Lens constructor expects string, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\LensTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/LensTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\LensTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/LensTokenizer.php
+
+		-
+			message: "#^Parameter \\$name of class BaseCodeOy\\\\Arch\\\\Model\\\\Nova\\\\Lens constructor expects string, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/LensTokenizer.php
 
@@ -826,12 +2506,22 @@ parameters:
 			path: src/Tokenizer/Laravel/Nova/MetricTokenizer.php
 
 		-
-			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Metric constructor expects string, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\MetricTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/MetricTokenizer.php
 
 		-
-			message: "#^Parameter \\$type of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Metric constructor expects string, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\MetricTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/MetricTokenizer.php
+
+		-
+			message: "#^Parameter \\$name of class BaseCodeOy\\\\Arch\\\\Model\\\\Nova\\\\Metric constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/MetricTokenizer.php
+
+		-
+			message: "#^Parameter \\$type of class BaseCodeOy\\\\Arch\\\\Model\\\\Nova\\\\Metric constructor expects string, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/MetricTokenizer.php
 
@@ -846,7 +2536,17 @@ parameters:
 			path: src/Tokenizer/Laravel/Nova/ResourceTokenizer.php
 
 		-
-			message: "#^Parameter \\$name of class BombenProdukt\\\\Arch\\\\Model\\\\Nova\\\\Resource constructor expects string, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\ResourceTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/ResourceTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\Nova\\\\ResourceTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/Nova/ResourceTokenizer.php
+
+		-
+			message: "#^Parameter \\$name of class BaseCodeOy\\\\Arch\\\\Model\\\\Nova\\\\Resource constructor expects string, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/Nova/ResourceTokenizer.php
 
@@ -856,7 +2556,17 @@ parameters:
 			path: src/Tokenizer/Laravel/ObserverTokenizer.php
 
 		-
-			message: "#^Parameter \\$plain of class BombenProdukt\\\\Arch\\\\Model\\\\Observer constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ObserverTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ObserverTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ObserverTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ObserverTokenizer.php
+
+		-
+			message: "#^Parameter \\$plain of class BaseCodeOy\\\\Arch\\\\Model\\\\Observer constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ObserverTokenizer.php
 
@@ -866,12 +2576,32 @@ parameters:
 			path: src/Tokenizer/Laravel/PivotTokenizer.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\PivotTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/PivotTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\PivotTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/PivotTokenizer.php
+
+		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/PolicyTokenizer.php
 
 		-
-			message: "#^Parameter \\$plain of class BombenProdukt\\\\Arch\\\\Model\\\\Policy constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\PolicyTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/PolicyTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\PolicyTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/PolicyTokenizer.php
+
+		-
+			message: "#^Parameter \\$plain of class BaseCodeOy\\\\Arch\\\\Model\\\\Policy constructor expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/PolicyTokenizer.php
 
@@ -881,7 +2611,27 @@ parameters:
 			path: src/Tokenizer/Laravel/ResourceCollectionTokenizer.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ResourceCollectionTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ResourceCollectionTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ResourceCollectionTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ResourceCollectionTokenizer.php
+
+		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ResourceTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ResourceTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ResourceTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ResourceTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ResourceTokenizer.php
 
@@ -891,7 +2641,27 @@ parameters:
 			path: src/Tokenizer/Laravel/RouteTokenizer.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\RouteTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/RouteTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\RouteTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/RouteTokenizer.php
+
+		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/RuleTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\RuleTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/RuleTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\RuleTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/RuleTokenizer.php
 
@@ -901,9 +2671,39 @@ parameters:
 			path: src/Tokenizer/Laravel/SeederTokenizer.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\SeederTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/SeederTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\SeederTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/SeederTokenizer.php
+
+		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ServiceProviderTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ServiceProviderTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ServiceProviderTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ServiceProviderTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ServiceProviderTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\StatementTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/StatementTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\StatementTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/StatementTokenizer.php
 
 		-
 			message: "#^Parameter \\#1 \\$callback of static method Illuminate\\\\Support\\\\Facades\\\\App\\:\\:call\\(\\) expects \\(callable\\(\\)\\: mixed\\)\\|string, array\\{string, 'from'\\} given\\.$#"
@@ -916,7 +2716,27 @@ parameters:
 			path: src/Tokenizer/Laravel/ViewComponentTokenizer.php
 
 		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ViewComponentTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ViewComponentTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ViewComponentTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ViewComponentTokenizer.php
+
+		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ViewComposerTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ViewComposerTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tokenizer/Laravel/ViewComposerTokenizer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ViewComposerTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tokenizer/Laravel/ViewComposerTokenizer.php
 
@@ -926,47 +2746,42 @@ parameters:
 			path: src/Tokenizer/Laravel/ViewTokenizer.php
 
 		-
-			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ViewTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
 			count: 1
-			path: src/Tokenizer/Livewire/ComponentTokenizer.php
+			path: src/Tokenizer/Laravel/ViewTokenizer.php
 
 		-
-			message: "#^Parameter \\$inline of class BombenProdukt\\\\Arch\\\\Model\\\\Livewire constructor expects bool, mixed given\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ViewTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
-			path: src/Tokenizer/Livewire/ComponentTokenizer.php
-
-		-
-			message: "#^Parameter \\$view of class BombenProdukt\\\\Arch\\\\Model\\\\Livewire constructor expects string\\|null, mixed given\\.$#"
-			count: 1
-			path: src/Tokenizer/Livewire/ComponentTokenizer.php
+			path: src/Tokenizer/Laravel/ViewTokenizer.php
 
 		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
 			count: 1
-			path: src/Transformer/RuleTransformer.php
+			path: src/Tokenizer/Livewire/ComponentTokenizer.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Transformer\\\\RuleTransformer\\:\\:betweenRuleForColumn\\(\\) has no return type specified\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Livewire\\\\ComponentTokenizer\\:\\:tokenize\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
 			count: 1
-			path: src/Transformer/RuleTransformer.php
+			path: src/Tokenizer/Livewire/ComponentTokenizer.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Transformer\\\\RuleTransformer\\:\\:fromColumn\\(\\) has no return type specified\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Livewire\\\\ComponentTokenizer\\:\\:tokenize\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
-			path: src/Transformer/RuleTransformer.php
+			path: src/Tokenizer/Livewire/ComponentTokenizer.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Transformer\\\\RuleTransformer\\:\\:overrideStringRuleForSpecialNames\\(\\) has no return type specified\\.$#"
+			message: "#^Parameter \\$inline of class BaseCodeOy\\\\Arch\\\\Model\\\\Livewire constructor expects bool, mixed given\\.$#"
 			count: 1
-			path: src/Transformer/RuleTransformer.php
+			path: src/Tokenizer/Livewire/ComponentTokenizer.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Transformer\\\\RuleTransformer\\:\\:overrideStringRuleForSpecialNames\\(\\) has parameter \\$name with no type specified\\.$#"
+			message: "#^Parameter \\$view of class BaseCodeOy\\\\Arch\\\\Model\\\\Livewire constructor expects string\\|null, mixed given\\.$#"
 			count: 1
-			path: src/Transformer/RuleTransformer.php
+			path: src/Tokenizer/Livewire/ComponentTokenizer.php
 
 		-
-			message: "#^Only booleans are allowed in an if condition, array given\\.$#"
+			message: "#^Only booleans are allowed in &&, array given on the left side\\.$#"
 			count: 1
 			path: src/Transformer/RuleTransformer.php
 
@@ -976,6 +2791,336 @@ parameters:
 			path: src/Transformer/RuleTransformer.php
 
 		-
-			message: "#^Method BombenProdukt\\\\Arch\\\\Tree\\\\ArrayTree\\:\\:get\\(\\) should return array but returns mixed\\.$#"
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tree\\\\ArrayTree\\:\\:get\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Tree/ArrayTree.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tree\\\\ArrayTree\\:\\:get\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Tree/ArrayTree.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Arch\\\\Tree\\\\ArrayTree\\:\\:merge\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tree/ArrayTree.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Arch\\\\Tree\\\\ArrayTree\\:\\:\\$tree type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Tree/ArrayTree.php
+
+		-
+			message: "#^Function draft\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Function fixture\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Function fixturePath\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Function shouldCreateFiles\\(\\) has parameter \\$outputs with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Function stub\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Function stubPath\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Parameter \\#1 \\$configuration of method BaseCodeOy\\\\Arch\\\\Extension\\\\InertiaExtension\\:\\:register\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Parameter \\#1 \\$configuration of method BaseCodeOy\\\\Arch\\\\Extension\\\\LaravelExtension\\:\\:register\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Parameter \\#1 \\$configuration of method BaseCodeOy\\\\Arch\\\\Extension\\\\Laravel\\\\NovaExtension\\:\\:register\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Parameter \\#1 \\$configuration of method BaseCodeOy\\\\Arch\\\\Extension\\\\LivewireExtension\\:\\:register\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Method Tests\\\\TestCase\\:\\:getRequiredServiceProviders\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToArray\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/ArrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToCompact\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/ArrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToConstructor\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/ArrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Arr\\:\\:propertiesToFunction\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/ArrMixinTest.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function expect$#"
+			count: 4
+			path: tests/Unit/Mixin/ArrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:castNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:className\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:classNameCamel\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:classNameKebab\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:classNameSnake\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:classNameStudly\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:commandNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:controllerNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:controllerTestNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:eventNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:factoryNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:formRequestNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:globalScopeNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:jobNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:livewireComponentNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:livewireTestNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:livewireViewNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:mailNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:middlewareNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:migrationNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:modelNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:modelTestNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:notificationNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:observerNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:pivotNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:policyNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:resourceCollectionNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:resourceNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:routeNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:ruleNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:seederNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:serviceProviderNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:toArrayItem\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:toVariable\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:viewComponentNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:viewComposerNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:viewNamespace\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function expect$#"
+			count: 37
+			path: tests/Unit/Mixin/StrMixinTest.php
+
+		-
+			message: "#^Call to method BaseCodeOy\\\\Arch\\\\Model\\\\Model\\:\\:tableName\\(\\) with incorrect case\\: tablename$#"
+			count: 1
+			path: tests/Unit/Model/ModelTest.php
+
+		-
+			message: "#^Access to an undefined property PHPUnit\\\\Framework\\\\TestCase\\:\\:\\$generatorResult\\.$#"
+			count: 6
+			path: tests/Unit/Reporter/JsonReporterTest.php
+
+		-
+			message: "#^Access to an undefined property PHPUnit\\\\Framework\\\\TestCase\\:\\:\\$reporter\\.$#"
+			count: 4
+			path: tests/Unit/Reporter/JsonReporterTest.php
+
+		-
+			message: "#^Access to an undefined property PHPUnit\\\\Framework\\\\TestCase\\:\\:\\$generatorResult\\.$#"
+			count: 6
+			path: tests/Unit/Reporter/YamlReporterTest.php
+
+		-
+			message: "#^Access to an undefined property PHPUnit\\\\Framework\\\\TestCase\\:\\:\\$reporter\\.$#"
+			count: 4
+			path: tests/Unit/Reporter/YamlReporterTest.php
+
+		-
+			message: "#^Cannot access offset 'definitions' on mixed\\.$#"
+			count: 2
+			path: tests/Unit/Tokenizer/Laravel/ModelTokenizerTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$tokens of method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\ModelTokenizer\\:\\:tokenize\\(\\) expects array, mixed given\\.$#"
+			count: 2
+			path: tests/Unit/Tokenizer/Laravel/ModelTokenizerTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$tokens of method BaseCodeOy\\\\Arch\\\\Tokenizer\\\\Laravel\\\\StatementTokenizer\\:\\:tokenize\\(\\) expects array, mixed given\\.$#"
+			count: 28
+			path: tests/Unit/Tokenizer/Laravel/StatementTokenizerTest.php

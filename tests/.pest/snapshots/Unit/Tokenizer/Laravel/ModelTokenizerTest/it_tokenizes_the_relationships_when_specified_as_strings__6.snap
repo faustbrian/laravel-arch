@@ -1,0 +1,5 @@
+{
+    "related": "User",
+    "foreignKey": null,
+    "localKey": null
+}

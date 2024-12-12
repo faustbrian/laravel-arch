@@ -26,13 +26,13 @@ it('can create an instance', function (): void {
 });
 
 it('can create an instance from a string', function (): void {
-    $subject = MorphMany::fromString('related name type id localKey');
+    $morphMany = MorphMany::fromString('related name type id localKey');
 
-    expect($subject->related())->toBe('related');
-    expect($subject->name())->toBe('name');
-    expect($subject->type())->toBe('type');
-    expect($subject->id())->toBe('id');
-    expect($subject->localKey())->toBe('localKey');
+    expect($morphMany->related())->toBe('related');
+    expect($morphMany->name())->toBe('name');
+    expect($morphMany->type())->toBe('type');
+    expect($morphMany->id())->toBe('id');
+    expect($morphMany->localKey())->toBe('localKey');
 });
 
 it('can return an array representation', function (): void {

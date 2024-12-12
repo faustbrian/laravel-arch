@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Http\/Livewire\/Modal.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Http\\Livewire;\n\nuse Livewire\\Component;\n\nclass Modal extends Component\n{\n    public function render(): string\n    {\n        return <<<'blade'\n            <div>\n                Very little is needed to make a happy life. - Marcus Aurelius\n            <\/div>\n        blade;\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

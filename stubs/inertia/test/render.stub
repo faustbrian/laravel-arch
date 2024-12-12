@@ -1,1 +1,0 @@
-$response->assertInertia(fn (Assert $page) => $page->component('{{ name }}'));

@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Http\/Controllers\/PlainApiController.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Http\\Controllers;\n\nuse App\\Http\\Controllers\\Controller;\n\nclass PlainApiController extends Controller\n{\n    \/**\n     * Create a new controller instance.\n     *\/\n    public function __construct()\n    {\n                $this->authorizeResource(PlainApi::class);\n\n    }\n\n    \/\/\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

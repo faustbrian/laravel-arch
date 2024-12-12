@@ -1,4 +1,0 @@
-    public function {{ relationship }}(): BelongsToMany
-    {
-        return $this->belongsToMany({{ related }}::class);
-    }

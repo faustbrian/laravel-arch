@@ -1,0 +1,7 @@
+{
+    "created": {
+        "database\/seeders\/UserSeeder.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace Database\\Seeders;\n\n\/\/ use Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents;\nuse Illuminate\\Database\\Seeder;\n\nclass UserSeeder extends Seeder\n{\n    \/**\n     * Run the database seeds.\n     *\/\n    public function run(): void\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

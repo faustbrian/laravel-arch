@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Nova\/Metrics\/Table.php": "<?php\n\nnamespace App\\Nova\\Metrics;\n\nuse Laravel\\Nova\\Http\\Requests\\NovaRequest;\nuse Laravel\\Nova\\Metrics\\MetricTableRow;\nuse Laravel\\Nova\\Metrics\\Table;\n\nclass Table extends Table\n{\n    \/**\n     * Calculate the value of the metric.\n     *\n     * @param  \\Laravel\\Nova\\Http\\Requests\\NovaRequest  $request\n     * @return mixed\n     *\/\n    public function calculate(NovaRequest $request)\n    {\n        return [\n            MetricTableRow::make()\n                ->icon('check-circle')\n                ->iconClass('text-green-500')\n                ->title('Silver Surfer')\n                ->subtitle('In every part of the globe it is the same!'),\n        ];\n    }\n\n    \/**\n     * Determine the amount of time the results of the metric should be cached.\n     *\n     * @return \\DateTimeInterface|\\DateInterval|float|int|null\n     *\/\n    public function cacheFor()\n    {\n        \/\/ return now()->addMinutes(5);\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

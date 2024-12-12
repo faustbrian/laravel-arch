@@ -26,13 +26,13 @@ it('can create an instance', function (): void {
 });
 
 it('can create an instance from a string', function (): void {
-    $subject = MorphOne::fromString('related name type id localKey');
+    $morphOne = MorphOne::fromString('related name type id localKey');
 
-    expect($subject->related())->toBe('related');
-    expect($subject->name())->toBe('name');
-    expect($subject->type())->toBe('type');
-    expect($subject->id())->toBe('id');
-    expect($subject->localKey())->toBe('localKey');
+    expect($morphOne->related())->toBe('related');
+    expect($morphOne->name())->toBe('name');
+    expect($morphOne->type())->toBe('type');
+    expect($morphOne->id())->toBe('id');
+    expect($morphOne->localKey())->toBe('localKey');
 });
 
 it('can return an array representation', function (): void {

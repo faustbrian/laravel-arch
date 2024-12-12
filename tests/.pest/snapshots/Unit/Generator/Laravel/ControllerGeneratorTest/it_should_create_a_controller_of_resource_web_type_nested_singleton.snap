@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Http\/Controllers\/ParentNestedSingletonController.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Http\\Controllers;\n\nuse App\\Http\\Controllers\\Controller;\nuse App\\Http\\Requests\\StoreNestedSingletonRequest;\nuse App\\Http\\Requests\\UpdateNestedSingletonRequest;\nuse App\\Models\\NestedSingleton;\nuse App\\Models\\Parent;\n\nclass ParentNestedSingletonController extends Controller\n{\n    \/**\n     * Create a new controller instance.\n     *\/\n    public function __construct()\n    {\n                $this->authorizeResource(NestedSingleton::class);\n\n    }\n\n    \/**\n     * Store the newly created resource in storage.\n     *\/\n    public function store(Request $request, Parent $parent): never\n    {\n        abort(404);\n    }\n\n    \/**\n     * Update the resource in storage.\n     *\/\n    public function update(UpdateNestedSingletonRequest $request, Parent $parent)\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

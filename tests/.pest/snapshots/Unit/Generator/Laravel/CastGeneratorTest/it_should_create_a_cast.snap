@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Casts\/Json.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Casts;\n\nuse Illuminate\\Contracts\\Database\\Eloquent\\CastsAttributes;\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass Json implements CastsAttributes\n{\n    \/**\n     * Cast the given value.\n     *\n     * @param array<string, mixed> $attributes\n     *\/\n    public function get(Model $model, string $key, mixed $value, array $attributes): mixed\n    {\n        return $value;\n    }\n\n    \/**\n     * Prepare the given value for storage.\n     *\n     * @param array<string, mixed> $attributes\n     *\/\n    public function set(Model $model, string $key, mixed $value, array $attributes): mixed\n    {\n        return $value;\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

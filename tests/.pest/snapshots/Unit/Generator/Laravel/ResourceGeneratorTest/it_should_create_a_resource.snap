@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Http\/Resources\/UserResource.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Http\\Resources;\n\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Http\\Resources\\Json\\JsonResource;\n\nclass UserResource extends JsonResource\n{\n    \/**\n     * Transform the resource into an array.\n     *\n     * @return array<string, mixed>\n     *\/\n    public function toArray(Request $request): array\n    {\n        return parent::toArray($request);\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

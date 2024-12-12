@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Casts\/Inbound.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Casts;\n\nuse Illuminate\\Contracts\\Database\\Eloquent\\CastsInboundAttributes;\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass Inbound implements CastsInboundAttributes\n{\n    \/**\n     * Prepare the given value for storage.\n     *\n     * @param array<string, mixed> $attributes\n     *\/\n    public function set(Model $model, string $key, mixed $value, array $attributes): mixed\n    {\n        return $value;\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

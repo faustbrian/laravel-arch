@@ -1,4 +1,0 @@
-    public function {{ relationship }}(): HasMany
-    {
-        return $this->hasMany({{ related }}::class);
-    }

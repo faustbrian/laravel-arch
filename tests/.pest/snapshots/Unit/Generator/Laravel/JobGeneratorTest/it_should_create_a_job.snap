@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Jobs\/WithoutParameters.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Jobs;\n\nuse Illuminate\\Foundation\\Bus\\Dispatchable;\n\nclass WithoutParameters\n{\n    use Dispatchable;\n\n    \/**\n     * Execute the job.\n     *\/\n    public function handle(): void\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

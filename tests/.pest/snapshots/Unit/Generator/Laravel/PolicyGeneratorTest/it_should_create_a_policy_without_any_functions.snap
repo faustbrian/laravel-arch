@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Policies\/ProductPolicy.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Policies;\n\n\/\/ use App\\Models\\Product;\n\/\/ use App\\Models\\User;\n\nclass ProductPolicy\n{\n    \/\/\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

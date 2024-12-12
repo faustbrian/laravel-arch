@@ -28,14 +28,14 @@ it('can create an instance', function (): void {
 });
 
 it('can create an instance from a string', function (): void {
-    $subject = HasManyThrough::fromString('related through firstKey secondKey localKey secondLocalKey');
+    $hasManyThrough = HasManyThrough::fromString('related through firstKey secondKey localKey secondLocalKey');
 
-    expect($subject->related())->toBe('related');
-    expect($subject->through())->toBe('through');
-    expect($subject->firstKey())->toBe('firstKey');
-    expect($subject->secondKey())->toBe('secondKey');
-    expect($subject->localKey())->toBe('localKey');
-    expect($subject->secondLocalKey())->toBe('secondLocalKey');
+    expect($hasManyThrough->related())->toBe('related');
+    expect($hasManyThrough->through())->toBe('through');
+    expect($hasManyThrough->firstKey())->toBe('firstKey');
+    expect($hasManyThrough->secondKey())->toBe('secondKey');
+    expect($hasManyThrough->localKey())->toBe('localKey');
+    expect($hasManyThrough->secondLocalKey())->toBe('secondLocalKey');
 });
 
 it('can return an array representation', function (): void {

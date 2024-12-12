@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Nova\/Dashboards\/UserInsights.php": "<?php\n\nnamespace App\\Nova\\Dashboards;\n\nuse Laravel\\Nova\\Dashboard;\n\nclass UserInsights extends Dashboard\n{\n    \/**\n     * Get the cards for the dashboard.\n     *\n     * @return array\n     *\/\n    public function cards()\n    {\n        return [\n            \/\/\n        ];\n    }\n\n    \/**\n     * Get the URI key for the dashboard.\n     *\n     * @return string\n     *\/\n    public function uriKey()\n    {\n        return 'uri-key';\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

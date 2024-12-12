@@ -1,0 +1,7 @@
+{
+    "created": {
+        "app\/Http\/Controllers\/ResourceController.php": "<?php\n\ndeclare(strict_types=1);\n\nnamespace App\\Http\\Controllers;\n\nuse App\\Http\\Controllers\\Controller;\nuse App\\Http\\Requests\\StoreResourceRequest;\nuse App\\Http\\Requests\\UpdateResourceRequest;\nuse App\\Models\\Resource;\n\nclass ResourceController extends Controller\n{\n    \/**\n     * Create a new controller instance.\n     *\/\n    public function __construct()\n    {\n                $this->authorizeResource(Resource::class);\n\n    }\n\n    \/**\n     * Display a listing of the resource.\n     *\/\n    public function index()\n    {\n        \/\/\n    }\n\n    \/**\n     * Store a newly created resource in storage.\n     *\/\n    public function store(StoreResourceRequest $request)\n    {\n        \/\/\n    }\n\n    \/**\n     * Update the specified resource in storage.\n     *\/\n    public function update(UpdateResourceRequest $request, Resource $resource)\n    {\n        \/\/\n    }\n}\n"
+    },
+    "deleted": [],
+    "updated": []
+}

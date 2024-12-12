@@ -24,12 +24,12 @@ it('can create an instance', function (): void {
 });
 
 it('can create an instance from a string', function (): void {
-    $subject = BelongsTo::fromString('related foreignKey ownerKey relation');
+    $belongsTo = BelongsTo::fromString('related foreignKey ownerKey relation');
 
-    expect($subject->related())->toBe('related');
-    expect($subject->foreignKey())->toBe('foreignKey');
-    expect($subject->ownerKey())->toBe('ownerKey');
-    expect($subject->relation())->toBe('relation');
+    expect($belongsTo->related())->toBe('related');
+    expect($belongsTo->foreignKey())->toBe('foreignKey');
+    expect($belongsTo->ownerKey())->toBe('ownerKey');
+    expect($belongsTo->relation())->toBe('relation');
 });
 
 it('can return an array representation', function (): void {

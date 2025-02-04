@@ -36,7 +36,7 @@
     "require-dev": {
         "basecodeoy/standards": "^1.1.1",
         "inertiajs/inertia-laravel": "^2.0.0",
-        "livewire/livewire": "^3.5.18"
+        "livewire/livewire": "^3.5.19"
     },
     "autoload": {
         "psr-4": {
